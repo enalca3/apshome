@@ -42,7 +42,7 @@ Esta aplicación está configurada para ser desplegada automáticamente en **AWS
 
 ## 📜 Licencia
 
-Este proyecto está desarrollado por [Enalcadev](https://www.enalcadev.com/) y se encuentra bajo una licencia propietaria.
+Este proyecto está desarrollado por [Enalcadev](https://www.enalcadev.com/) y se encuentra bajo una licencia propietaria. Su código no está disponible para uso, modificación o distribución sin autorización.
 
 ---
 Desarrollado por **Enalcadev** 🚀
