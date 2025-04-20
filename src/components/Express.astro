@@ -1,32 +1,72 @@
-<section>
+---
+import PreviewProduct from "./PreviewProduct.astro"
+import { PRODUCTS } from "@/conts/products"
+---
+
+<section class="px-8 py-12 mx-auto max-w-7xl md:px-12">
+
+    <div class="border-b border-gray-200 pb-5">
+        <h2 class="text-3xl font-semibold text-black">
+            SOFÁ CHAISELONGUE
+        </h2>
+    </div>
     
-<div class="grid grid-cols-5 grid-rows-9 gap-4">
-    <div >1</div>
-    <div >2</div>
-    <div >3</div>
-    <div class="row-start-2">4</div>
-    <div class="row-start-2">5</div>
-    <div class="row-start-2">6</div>
-    <div class="row-start-3">7</div>
-    <div class="row-start-3">8</div>
-    <div class="row-start-3">9</div>
-    <div class="row-start-4">10</div>
-    <div class="row-start-4">11</div>
-    <div class="row-start-4">12</div>
-    <div class="row-start-5">13</div>
-    <div class="row-start-5">14</div>
-    <div class="row-start-5">15</div>
-    <div class="row-start-6">16</div>
-    <div class="row-start-6">17</div>
-    <div class="row-start-6">18</div>
-    <div class="row-start-7">19</div>
-    <div class="row-start-7">20</div>
-    <div class="row-start-7">21</div>
-    <div class="row-start-8">22</div>
-    <div class="row-start-8">23</div>
-    <div class="row-start-8">24</div>
-    <div class="row-start-9">25</div>
-    <div class="row-start-9">26</div>
-</div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 mt-12 gap-2 gap-y-12 lg:gap-y-24">
+        <!-- Iterar todos los productos y mostrarlos -->
+        {PRODUCTS.map((product) => (
+            <PreviewProduct product={product}></PreviewProduct>
+        ))}
+    </div>
+
+</section>
+
+<section class="px-8 py-12 mx-auto max-w-7xl md:px-12">
+
+    <div class="border-b border-gray-200 pb-5">
+        <h2 class="text-3xl font-semibold text-black">
+            SOFÁS
+        </h2>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 mt-12 gap-2 gap-y-12 lg:gap-y-24">
+        <!-- Iterar todos los productos y mostrarlos -->
+        {PRODUCTS.map((product) => (
+            <PreviewProduct product={product}></PreviewProduct>
+        ))}  
+    </div>
+
+</section>
+
+<section class="px-8 py-12 mx-auto max-w-7xl md:px-12">
+
+    <div class="border-b border-gray-200 pb-5">
+        <h2 class="text-3xl font-semibold text-black">
+            SILLÓN RELAX
+        </h2>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 mt-12 gap-2 gap-y-12 lg:gap-y-24">
+        <!-- Iterar todos los productos y mostrarlos -->
+        {PRODUCTS.map((product) => (
+            <PreviewProduct product={product}></PreviewProduct>
+        ))}  
+    </div>
+
+</section>
+
+<section class="px-8 py-12 mx-auto max-w-7xl md:px-12">
+
+    <div class="border-b border-gray-200 pb-5">
+        <h2 class="text-3xl font-semibold text-black">
+            DESCANSO
+        </h2>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 mt-12 gap-2 gap-y-12 lg:gap-y-24">
+        <!-- Iterar todos los productos y mostrarlos -->
+        {PRODUCTS.map((product) => (
+            <PreviewProduct product={product}></PreviewProduct>
+        ))}   
+    </div>
     
 </section>
