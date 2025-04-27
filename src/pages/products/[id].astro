@@ -1,0 +1,23 @@
+---
+import { PRODUCTS } from "@/conts/products"
+
+export async function getStaticPaths() {
+  return PRODUCTS.map(product => ({
+    params: { id: product.id },
+    props: { product }, // props para pasar datos al render
+  }));
+}
+
+const { id } = Astro.params;
+const { product } = Astro.props;
+
+// Validar si no existe el producto
+if (!product) {
+  throw new Error('Product not found'); // Esto manda a la página 404 automáticamente
+}
+---
+
+<h1>Producto: {product.name}</h1>
+<p>Precio: {product.price} €</p>
+<p>Descripción: {product.description}</p>
+<img src={product.imageUrl} alt={product.name} class="w-full h-auto" loading="lazy" />
