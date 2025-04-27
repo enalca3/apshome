@@ -25,7 +25,7 @@ export default function Carrusel() {
 
   return (
     <Carousel 
-        className="w-full max-w-xs"
+        className="w-full"
         plugins={[autoplay.current]}
     >
       <CarouselContent>
@@ -33,7 +33,7 @@ export default function Carrusel() {
           <CarouselItem key={index}>
             <div className="p-1">
               <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
+                <CardContent className="flex aspect-video items-center justify-center p-6">
                   <span className="text-4xl font-semibold">{index + 1}</span>
                 </CardContent>
               </Card>
