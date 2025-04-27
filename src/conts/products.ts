@@ -3,11 +3,11 @@ import type { Product } from "@/types/product";
 
 export const PRODUCTS: Product[] = [
     {
-        id: "paris",
+        id: "sofa-chaise-longue-paris",
         name: "Paris",
         description: "Sofá chaiselongue de diseño moderno y elegante.",
         price: 899.99,
-        imageUrl: "/images/logo.webp",
+        imageUrl: "/images/products/paris.png",
         category: "Sofá chaiselongue",
     },
     {
