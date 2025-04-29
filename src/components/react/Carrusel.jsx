@@ -33,7 +33,7 @@ export default function Carrusel() {
           <CarouselItem key={index}>
             <div className="p-1">
               <Card>
-                <CardContent className="flex aspect-video items-center justify-center p-6">
+                <CardContent className="flex aspect-auto items-center justify-center p-6">
                   <span className="text-4xl font-semibold">{index + 1}</span>
                 </CardContent>
               </Card>
@@ -41,8 +41,6 @@ export default function Carrusel() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
     </Carousel>
   );
 }
