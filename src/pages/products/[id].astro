@@ -1,23 +1,24 @@
 ---
+import Layout from "@/layouts/Layout.astro";
 import { PRODUCTS } from "@/conts/products"
 
 export async function getStaticPaths() {
-  return PRODUCTS.map(product => ({
+  return PRODUCTS.map(product => (
+  {
+    // Generar la ruta para cada producto
     params: { id: product.id },
-    props: { product }, // props para pasar datos al render
+    props: { product } // Pasar el producto como prop a la página
   }));
 }
-
-const { id } = Astro.params;
 const { product } = Astro.props;
 
-// Validar si no existe el producto
-if (!product) {
-  throw new Error('Product not found'); // Esto manda a la página 404 automáticamente
-}
 ---
-
-<h1>Producto: {product.name}</h1>
-<p>Precio: {product.price} €</p>
-<p>Descripción: {product.description}</p>
-<img src={product.imageUrl} alt={product.name} class="w-full h-auto" loading="lazy" />
+<Layout> 
+  <div class="container mx-auto px-4 my-20">
+    <h1>Producto: {product.name}</h1>
+    <p>Precio: {product.price} €</p>
+    <p>Descripción: {product.description}</p>
+    <img src={product.imageUrl} alt={product.name} class="w-full h-auto" loading="lazy" />
+  </div>
+  
+</Layout>
