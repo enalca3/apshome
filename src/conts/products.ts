@@ -34,4 +34,12 @@ export const PRODUCTS: Product[] = [
         imageUrl: "/images/logo.webp",
         category: "Descanso",
     },
+    {
+        id: "descanso-beni",
+        name: "Beni",
+        description: "Butaca fija de diseño moderno y elegante.",
+        price: 219.99,
+        imageUrl: "/images/products/beni.png",
+        category: "Sillón relax",
+    },
 ] as const; // Use 'as const' to ensure the array is treated as a constant
