@@ -70,3 +70,20 @@ import { PRODUCTS } from "@/conts/products"
     </div>
     
 </section>
+
+<section class="px-8 py-12 mx-auto max-w-7xl md:px-12">
+
+    <div class="border-b border-gray-200 pb-5">
+        <h2 class="text-3xl font-semibold text-black">
+            STOCK
+        </h2>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 mt-12 gap-2 gap-y-12 lg:gap-y-24">
+        <!-- Iterar todos los productos y mostrarlos -->
+        {PRODUCTS.map((product) => (
+            <PreviewProduct product={product}></PreviewProduct>
+        ))}   
+    </div>
+    
+</section>
