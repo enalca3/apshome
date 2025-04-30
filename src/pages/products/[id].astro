@@ -15,7 +15,7 @@ const { product } = Astro.props;
 ---
 <Layout> 
   <section>
-    <div class="items-center px-8 pb-12 mx-auto max-w-7xl md:px-12 lg:pb-24 pt-36">
+    <div class="items-center px-8 pb-12 mx-auto max-w-7xl md:px-12 lg:pb-24 pt-16">
       <h1 class="text-3xl md:text-5xl lg:text-7xl text-balance text-black font-display uppercase">
         {product.name}
       </h1>
@@ -26,13 +26,49 @@ const { product } = Astro.props;
               <img src={product.imageUrl} alt={product.name} class="object-center object-cover rounded-xl" loading="lazy" />  
             </div>
             <div class="aspect-h-3 aspect-w-4 overflow-hidden">
-              
+              <div class="flex items-center space-x-4 md:mr-6">
+                <img src={product.imageUrl} alt={product.name} class="object-center object-cover rounded-xl w-1/4" loading="lazy" />
+                <img src={product.imageUrl} alt={product.name} class="object-center object-cover rounded-xl w-1/4" loading="lazy" />
+                <img src={product.imageUrl} alt={product.name} class="object-center object-cover rounded-xl w-1/4" loading="lazy" />
+              </div>
             </div>  
           </div>
           <div class="mx-auto lg:col-span-3 lg:max-w-none lg:mt-0 lg:row-end-2 lg:row-span-2 max-w-2xl mt-14 sm:mt-16">
+            
             <p class="text-gray-600">
               {product.description}
-            </p>  
+            </p>
+            <dl class="flex flex-col gap-2 mt-8">
+              <div class="border border-gray-200 p-6 rounded-lg hover:shadow-2xl duration-200 bg-gray-50">
+                <dt class="text-sm font-semibold text-gray-900">PRECIO</dt>
+                <dd class="mt-1 text-sm text-gray-600">{product.price} €</dd>
+              </div>
+            </dl>
+            <div class="border-t mt-10 pt-10 border-gray-200">
+              <h3 class="text-base font-semibold text-black">COLORES</h3>
+              <div class="flex items-center space-x-4 md:mr-6">
+                <img src={product.imageUrl} alt={product.name} class="object-center object-cover rounded-xl w-1/4" loading="lazy" />
+                <img src={product.imageUrl} alt={product.name} class="object-center object-cover rounded-xl w-1/4" loading="lazy" />
+                <img src={product.imageUrl} alt={product.name} class="object-center object-cover rounded-xl w-1/4" loading="lazy" />
+              </div>
+            </div>
+            <div class="border-t mt-10 pt-10 border-gray-200">
+              <h3 class="text-base font-semibold text-black">ESPECIFICACIONES TÉCNICAS</h3>
+              <div class="text-gray-600 mt-4 prose prose-sm">
+                <ul class="list-disc list-inside space-y-2">
+                  <li>{product.specifications.material}</li>
+                </ul>
+              </div>  
+            </div>  
+            <div class="border-t mt-10 pt-10 border-gray-200">
+              <h3 class="text-base font-semibold text-black">CARACTERÍSTICAS</h3>
+              <div class="text-gray-600 mt-4 prose prose-sm">
+                <ul class="list-disc list-inside space-y-2">
+                  <li>{product.specifications.material}</li>
+                </ul>
+              </div>  
+            </div>
+            
           </div>
         </div>
       </div>

@@ -9,6 +9,14 @@ export const PRODUCTS: Product[] = [
         price: 899.99,
         imageUrl: "/images/products/paris.png",
         category: "Sofá chaiselongue",
+        specifications: {
+            material: "Tela",
+            color: "Gris",
+            dimensions: "250 x 150 x 90 cm",
+            weight: 80,
+            warranty: "2 años",
+            assemblyRequired: true,
+        }
     },
     {
         id: "ibiza",
@@ -17,6 +25,14 @@ export const PRODUCTS: Product[] = [
         price: 499.99,
         imageUrl: "/images/products/ibiza.png",
         category: "Sofás",
+        specifications: {
+            material: "Cuero sintético",
+            color: "Negro",
+            weight: 50,
+            dimensions: "200 x 90 x 85 cm",
+            warranty: "2 años",
+            assemblyRequired: true,
+        }
     },
     {
         id: "love",
@@ -25,6 +41,14 @@ export const PRODUCTS: Product[] = [
         price: 299.99,
         imageUrl: "/images/logo.webp",
         category: "Sillón relax",
+        specifications: {
+            material: "Tela",
+            color: "Beige",
+            dimensions: "90 x 100 x 110 cm",
+            weight: 30,
+            warranty: "1 año",
+            assemblyRequired: false,
+        },
     },
     {
         id: "ilusion",
@@ -33,6 +57,14 @@ export const PRODUCTS: Product[] = [
         price: 399.99,
         imageUrl: "/images/logo.webp",
         category: "Descanso",
+        specifications: {
+            material: "Viscoelástico",
+            firmness: "Media",
+            dimensions: "150 x 190 x 25 cm",
+            weight: 25,
+            warranty: "10 años",
+            assemblyRequired: false,
+        },
     },
     {
         id: "descanso-beni",
@@ -41,5 +73,13 @@ export const PRODUCTS: Product[] = [
         price: 219.99,
         imageUrl: "/images/products/beni.png",
         category: "Sillón relax",
+        specifications: {
+            material: "Tela",
+            color: "Gris",
+            dimensions: "80 x 90 x 100 cm",
+            weight: 20,
+            warranty: "2 años",
+            assemblyRequired: false,
+        },
     },
 ] as const; // Use 'as const' to ensure the array is treated as a constant
