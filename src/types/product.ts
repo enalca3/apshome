@@ -12,4 +12,7 @@ export interface Product {
     price: number;
     imageUrl: string;
     category: productCategory;
+    specifications: {
+        [key: string]: string | number | boolean;
+    };
 }
