@@ -11,6 +11,8 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
 
+import { CAROUSEL_ITEMS } from "@/conts/carousel"
+
 export default function Carrusel() {
 
     const autoplay = useRef(
@@ -31,13 +33,11 @@ export default function Carrusel() {
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
           <CarouselItem key={index}>
-            <div className="p-1">
               <Card>
-                <CardContent className="flex aspect-auto items-center justify-center p-6">
-                  <span className="text-4xl font-semibold">{index + 1}</span>
+                <CardContent className="flex items-center justify-center w-full">
+                  <img src={CAROUSEL_ITEMS[index]} alt="Imagen" className="rounded-lg md:h-[800px] xs:w-[800px] md:w-[1200px] object-cover" />
                 </CardContent>
               </Card>
-            </div>
           </CarouselItem>
         ))}
       </CarouselContent>
