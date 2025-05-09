@@ -11,6 +11,7 @@ export interface Product {
     description: string;
     price: number;
     imageUrl: string;
+    images: string[];
     category: productCategory;
     specifications: {
         [key: string]: string | number | boolean;
