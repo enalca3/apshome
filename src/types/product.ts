@@ -1,9 +1,9 @@
 
 export type productCategory = 'Sofá chaiselongue' | 'Sofás' | 'Sillón relax' | 'Descanso';
 
-type idProduct = 'sofa-chaise-longue-paris' | 'ibiza' | 'love' | 'ilusion' | 'descanso-beni';
+type idProduct = 'sofa-chaise-longue-paris' | 'sofa-ibiza' | 'sofa-bella' | 'sofa-chaise-longue-toscama' | 'sillon-relax-beni' | 'sofa-chaise-longue-berlin';
 
-type productName = 'Paris' | 'Ibiza' | 'Love' | 'Ilusión' | 'Beni';
+type productName = 'Paris' | 'Ibiza' | 'Bella' | 'Toscama' | 'Beni' | 'Berlin';
 
 export interface Product {
     id: idProduct;

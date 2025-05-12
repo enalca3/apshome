@@ -5,29 +5,51 @@ export const PRODUCTS: Product[] = [
     {
         id: "sofa-chaise-longue-paris",
         name: "Paris",
-        description: "Sofá chaiselongue de diseño moderno y elegante.",
-        price: 899.99,
+        description: "Sofá chaiselongue 3 plazas con arcón, brazo arcón, asiento eléctrico deslizante y puerto USB.",
+        price: 1428.00,
         imageUrl: "/images/products/paris.png",
         images: [
             "/images/products/paris.png",
             "/images/products/paris_2.png",
-            "/images/products/paris_3.png"
+            "/images/products/paris_3.png",
+            "/images/products/paris_4.png"
         ],
         category: "Sofá chaiselongue",
         specifications: {
             material: "Tela",
             color: "Gris",
-            dimensions: "250 x 150 x 90 cm",
+            dimensions: "330 x 150 x 90 cm",
             weight: 80,
             warranty: "2 años",
             assemblyRequired: true,
         }
     },
     {
-        id: "ibiza",
+        id: "sofa-chaise-longue-toscama",
+        name: "Toscama",
+        description: "Sofá chaiselongue 3 plazas, deslizante al suelo tipo cama y cabezal reclinable.",
+        price: 967.40,
+        imageUrl: "/images/products/toscama.png",
+        images: [
+            "/images/products/toscama.png",
+            "/images/products/toscama_2.png",
+            "/images/products/toscama_3.png"
+        ],
+        category: "Sofá chaiselongue",
+        specifications: {
+            material: "Tela",
+            color: "Beige",
+            dimensions: "295 x 150 x 90 cm",
+            weight: 80,
+            warranty: "2 años",
+            assemblyRequired: true,
+        }
+    },
+    {
+        id: "sofa-ibiza",
         name: "Ibiza",
-        description: "Sofá de dos plazas con un diseño contemporáneo.",
-        price: 499.99,
+        description: "Sofá de dos plazas y media con un diseño contemporáneo.",
+        price: 1115.44,
         imageUrl: "/images/products/ibiza.png",
         images: [
             "/images/products/ibiza.png",
@@ -40,46 +62,45 @@ export const PRODUCTS: Product[] = [
             material: "Cuero sintético",
             color: "Negro",
             weight: 50,
-            dimensions: "200 x 90 x 85 cm",
+            dimensions: "270 x 90 x 85 cm",
             warranty: "2 años",
             assemblyRequired: true,
         }
     },
     {
-        id: "love",
-        name: "Love",
-        description: "Sillón relax con función de masaje y calefacción.",
-        price: 299.99,
-        imageUrl: "/images/logo.webp",
+        id: "sofa-bella",
+        name: "Bella",
+        description: "Sofá cama con apertura italiana.",
+        price: 779.38,
+        imageUrl: "/images/products/bella.png",
         images: [
-            "/images/products/love.png",
-            "/images/products/love_2.png",
-            "/images/products/love_3.png",
-            "/images/products/love_4.png"
+            "/images/products/bella.png",
+            "/images/products/bella_2.png",
+            "/images/products/bella_3.png",
+            "/images/products/bella_4.png"
         ],
-        category: "Sillón relax",
+        category: "Sofás",
         specifications: {
             material: "Tela",
-            color: "Beige",
-            dimensions: "90 x 100 x 110 cm",
+            color: "Orquidea",
+            dimensions: "185 x 95 x 105 cm",
             weight: 30,
             warranty: "1 año",
             assemblyRequired: false,
         },
     },
     {
-        id: "ilusion",
-        name: "Ilusión",
-        description: "Colchón viscoelástico de alta calidad para un descanso óptimo.",
-        price: 399.99,
-        imageUrl: "/images/logo.webp",
+        id: "sofa-chaise-longue-berlin",
+        name: "Berlin",
+        description: "Sofá chaiselongue 3 plazas, brazo deslizante y asiento extraible.",
+        price: 1184.94,
+        imageUrl: "/images/products/berlin.png",
         images: [
-            "/images/products/ilusion.png",
-            "/images/products/ilusion_2.png",
-            "/images/products/ilusion_3.png",
-            "/images/products/ilusion_4.png"
+            "/images/products/berlin.png",
+            "/images/products/berlin_2.png",
+            "/images/products/berlin_3.png"
         ],
-        category: "Descanso",
+        category: "Sofá chaiselongue",
         specifications: {
             material: "Viscoelástico",
             firmness: "Media",
@@ -90,7 +111,7 @@ export const PRODUCTS: Product[] = [
         },
     },
     {
-        id: "descanso-beni",
+        id: "sillon-relax-beni",
         name: "Beni",
         description: "Butaca fija de diseño moderno y elegante.",
         price: 219.99,
@@ -98,8 +119,7 @@ export const PRODUCTS: Product[] = [
         images: [
             "/images/products/beni.png",
             "/images/products/beni_2.png",
-            "/images/products/beni_3.png",
-            "/images/products/beni_4.png"
+            "/images/products/beni_3.png"
         ],
         category: "Sillón relax",
         specifications: {
