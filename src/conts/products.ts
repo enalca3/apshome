@@ -7,7 +7,7 @@ export const PRODUCTS: Product[] = [
         name: "Paris",
         description: "Sofá chaiselongue 3 plazas con arcón, brazo arcón, asiento eléctrico deslizante y puerto USB.",
         price: 1428.00,
-        imageUrl: "/images/products/paris.png",
+        mainImage: "/images/products/paris.png",
         images: [
             "/images/products/paris.png",
             "/images/products/paris_2.png",
@@ -29,11 +29,12 @@ export const PRODUCTS: Product[] = [
         name: "Toscama",
         description: "Sofá chaiselongue 3 plazas, deslizante al suelo tipo cama y cabezal reclinable.",
         price: 967.40,
-        imageUrl: "/images/products/toscama.png",
+        mainImage: "/images/products/toscama.png",
         images: [
             "/images/products/toscama.png",
             "/images/products/toscama_2.png",
-            "/images/products/toscama_3.png"
+            "/images/products/toscama_3.png",
+            "/images/products/toscama_4.png"
         ],
         category: "Sofá chaiselongue",
         specifications: {
@@ -50,7 +51,7 @@ export const PRODUCTS: Product[] = [
         name: "Ibiza",
         description: "Sofá de dos plazas y media con un diseño contemporáneo.",
         price: 1115.44,
-        imageUrl: "/images/products/ibiza.png",
+        mainImage: "/images/products/ibiza.png",
         images: [
             "/images/products/ibiza.png",
             "/images/products/ibiza_2.png",
@@ -72,7 +73,7 @@ export const PRODUCTS: Product[] = [
         name: "Bella",
         description: "Sofá cama con apertura italiana.",
         price: 779.38,
-        imageUrl: "/images/products/bella.png",
+        mainImage: "/images/products/bella.png",
         images: [
             "/images/products/bella.png",
             "/images/products/bella_2.png",
@@ -94,7 +95,7 @@ export const PRODUCTS: Product[] = [
         name: "Berlin",
         description: "Sofá chaiselongue 3 plazas, brazo deslizante y asiento extraible.",
         price: 1184.94,
-        imageUrl: "/images/products/berlin.png",
+        mainImage: "/images/products/berlin.png",
         images: [
             "/images/products/berlin.png",
             "/images/products/berlin_2.png",
@@ -115,7 +116,7 @@ export const PRODUCTS: Product[] = [
         name: "Beni",
         description: "Butaca fija de diseño moderno y elegante.",
         price: 219.99,
-        imageUrl: "/images/products/beni.png",
+        mainImage: "/images/products/beni.png",
         images: [
             "/images/products/beni.png",
             "/images/products/beni_2.png",

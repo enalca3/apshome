@@ -10,7 +10,7 @@ export interface Product {
     name: productName;
     description: string;
     price: number;
-    imageUrl: string;
+    mainImage: string;
     images: string[];
     category: productCategory;
     specifications: {
