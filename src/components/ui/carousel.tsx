@@ -3,6 +3,7 @@ import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from "embla-carousel-react"
 import { ArrowLeft, ArrowRight } from "lucide-react"
+import { DotButton, useDotButton, type DotButtonProps } from '@/components/ui/carouselDotButton'
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -229,6 +230,31 @@ function CarouselNext({
   )
 }
 
+function CarouselDotButton({
+  index,
+  className,
+  autoplay,
+  ...props
+}: DotButtonProps) {
+  const { api } = useCarousel()
+  const { selectedIndex, onDotButtonClick} = useDotButton(api, autoplay)
+
+  return (
+    <DotButton
+      data-slot="carousel-dot-button"
+      index={index}
+      selected={selectedIndex === index}
+      onClick={() => onDotButtonClick(index)}
+      className={cn(
+        "size-4 rounded-full",
+        selectedIndex === index ? "bg-primary" : "bg-primary/20",
+        "hover:bg-primary/50 hover:cursor-pointer")
+      }
+      {...props}
+    />
+  )
+}
+
 export {
   type CarouselApi,
   Carousel,
@@ -236,4 +262,5 @@ export {
   CarouselItem,
   CarouselPrevious,
   CarouselNext,
+  CarouselDotButton
 }
