@@ -1,3 +1,8 @@
+---
+import AppNavigationMenu from "./react/AppNavigationMenu";
+---
+
+
 <header class="sticky top-0 z-50 bg-white/20 backdrop-blur-md border-b border-white/30">
     <nav class="flex items-center justify-between bg-white/20 backdrop-blur-md p-4 shadow-md relative">
         
@@ -7,9 +12,9 @@
             </a>
         </div>
         <div class="flex items-center">
-            <div class="text-xl font-bold text-gray-800 ml-30">
-                Develop
-            </div>
+            <AppNavigationMenu client:idle>
+            </AppNavigationMenu>               
+
         </div>
         <div class="flex items-center space-x-4 md:mr-6 z-10">
             <a href="https://www.instagram.com/apshome.desing" target="_blank" rel="noopener noreferrer">
