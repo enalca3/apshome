@@ -34,8 +34,9 @@ export default function Carrusel() {
           <CarouselItem key={index}>
               <Card className="bg-gray-50">
                 <CardContent className="flex flex-col md:flex-row items-center justify-center">
-                  
-                  <img src={item.imageUrl} alt={item.title} className="rounded-lg max-h-[180px] md:max-h-[400px] object-cover" />
+                  <a href={item.link}>
+                    <img src={item.imageUrl} alt={item.title} className="rounded-lg max-h-[180px] md:max-h-[400px] object-cover" />
+                  </a>
                   <div className="flex md:flex-col justify-between md:justify-center mt-4 md:mx-8 gap-4 w-full md:w-1/4">
                     <h1 className="text-5xl lg:text-7xl text-black font-display uppercase object-center">
                       {item.title}
@@ -54,7 +55,7 @@ export default function Carrusel() {
                       <h2 className="text-3xl lg:text-5xl text-black text-right">
                         {item.price} €
                       </h2>
-                    )}                    
+                    )}
                   </div>
                 </CardContent>
               </Card>
