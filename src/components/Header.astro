@@ -1,5 +1,6 @@
 ---
 import AppNavigationMenu from "@/components/react/AppNavigationMenu";
+import AppMenuBar from "@/components/react/AppMenuBar";
 import { 
     menuSofaChaiselongue, 
     menuSofa, 
@@ -12,6 +13,7 @@ import {
 <header class="sticky top-0 z-50 bg-white/20 backdrop-blur-md border-b border-white/30">
     <nav class="flex items-center justify-between bg-white/20 backdrop-blur-md p-4 shadow-md relative">
         
+        
         <div class="flex space-x-4 absolute md:mt-16">
             <a href="/" class="flex items-center w-1/8">
                 <img src="/images/logo.webp" alt="Home" class="aspect-square rounded-full object-cover" />
@@ -19,6 +21,10 @@ import {
         </div>
         <div class="flex items-center">
 
+        </div>
+        <div class="md:hidden flex items-center">
+            <AppMenuBar client:idle>
+            </AppMenuBar>
         </div>
 
         <div class="hidden md:flex items-center gap-4">
