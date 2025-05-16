@@ -4,39 +4,50 @@ import {
     NavigationMenuContent, 
     NavigationMenuList, 
     NavigationMenuItem, 
-    NavigationMenuLink } from '@/components/ui/navigation-menu';
+    NavigationMenuLink 
+} from '@/components/ui/navigation-menu';
+import type { MenuSection } from '@/types/menu';
 
-export default function AppNavigationMenu() {
+interface Props {
+    menuItems: MenuSection[];
+}
+
+export default function AppNavigationMenu({ menuItems }: Props) {
+
+    const scrollToSection = (sectionTitle: string) => {
+        const element = document.querySelector(`[data-section="${sectionTitle}"]`);
+        if (element) {
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.scrollY - 50;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    };
+
     return (
         <NavigationMenu>
             <NavigationMenuList>
-                <NavigationMenuItem>
-                    <NavigationMenuTrigger>Categorias</NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                        <ul>
-                            <li>
-                                <NavigationMenuLink href="/products/sofa-chaise-longue-paris">
-                                    Paris
-                                </NavigationMenuLink>
-                            </li>
-                            <li>
-                                <NavigationMenuLink href="/products/sofa-chaise-longue-toscama">
-                                    Toscama
-                                </NavigationMenuLink>
-                            </li>
-                            <li>
-                                <NavigationMenuLink href="/products/sofa-ibiza">
-                                    Ibiza
-                                </NavigationMenuLink>
-                            </li>
-                            <li>
-                                <NavigationMenuLink href="/products/sofa-bella">
-                                    Bella
-                                </NavigationMenuLink>
-                            </li>
-                        </ul>
-                    </NavigationMenuContent>
-                </NavigationMenuItem>
+                {menuItems.map((section) => (
+                    <NavigationMenuItem key={section.title}>
+                        <NavigationMenuTrigger onClick={() => scrollToSection(section.title)}>
+                            {section.title}
+                        </NavigationMenuTrigger>
+                        <NavigationMenuContent>
+                            <ul>
+                                {section.items.map((item) => (
+                                    <li key={item.title}>
+                                        <NavigationMenuLink href={item.href}>
+                                            {item.title}
+                                        </NavigationMenuLink>
+                                    </li>
+                                ))}
+                            </ul>
+                        </NavigationMenuContent>
+                    </NavigationMenuItem>
+                ))}
             </NavigationMenuList>
         </NavigationMenu>
     );
