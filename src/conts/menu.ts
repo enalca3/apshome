@@ -63,9 +63,10 @@ export const menuStock: MenuSection[] = [
 export const menuContacto: MenuSection[] = [
     {
         title: "CONTACTO",
+        href: "/contact",
         items: [
             { title: "Sobre nosotros", href: "/about-us" },
-            { title: "Localización", href: "/contact" },
+            { title: "Dónde estamos", href: "/contact" },
         ]
     }
 ];

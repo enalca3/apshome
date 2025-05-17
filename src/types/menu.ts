@@ -5,5 +5,6 @@ export interface MenuItem {
 
 export interface MenuSection {
   title: string;
+  href?: string;
   items: MenuItem[];
 }

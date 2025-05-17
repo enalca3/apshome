@@ -4,7 +4,6 @@ import {
   MenubarItem,
   MenubarMenu,
   MenubarSeparator,
-  MenubarShortcut,
   MenubarTrigger,
 } from "@/components/ui/menubar"
 
@@ -39,7 +38,13 @@ export default function AppMenuBar({ menuItems }: Props) {
                 </MenubarTrigger>
                 <MenubarContent>
                     {menuItems.map((section) => (
-                        <MenubarItem key={section[0].title} onClick={() => scrollToSection(section[0].title)}>
+                        <MenubarItem 
+                            key={section[0].title} 
+                            onClick={() => section[0].href 
+                                ? window.location.href = section[0].href! 
+                                : scrollToSection(section[0].title)
+                            }
+                        >
                             {section[0].title}
                             <MenubarSeparator />
                         </MenubarItem>                        
