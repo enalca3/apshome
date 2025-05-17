@@ -8,24 +8,33 @@ import {
     menuDescanso, 
     menuStock,
     menuContacto } from "@/conts/menu.ts";
+
+const allMenuItems = [
+    menuSofaChaiselongue,
+    menuSofa, 
+    menuSillonRelax,
+    menuDescanso,
+    menuStock,
+    menuContacto
+];
 ---
 
 <header class="sticky top-0 z-50 bg-white/20 backdrop-blur-md border-b border-white/30">
     <nav class="flex items-center justify-between bg-white/20 backdrop-blur-md p-4 shadow-md relative">
         
+        <div class="md:hidden flex items-center">
+            <AppMenuBar client:idle menuItems={allMenuItems}>
+            </AppMenuBar>
+        </div>
         
-        <div class="flex space-x-4 absolute md:mt-16">
+        <div class="flex space-x-4 absolute ml-15 md:ml-6 md:mt-16">
             <a href="/" class="flex items-center w-1/8">
                 <img src="/images/logo.webp" alt="Home" class="aspect-square rounded-full object-cover" />
             </a>
         </div>
         <div class="flex items-center">
 
-        </div>
-        <div class="md:hidden flex items-center">
-            <AppMenuBar client:idle>
-            </AppMenuBar>
-        </div>
+        </div>        
 
         <div class="hidden md:flex items-center gap-4">
             <AppNavigationMenu client:idle menuItems={menuSofaChaiselongue}>
