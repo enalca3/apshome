@@ -1,6 +1,12 @@
 ---
 import PreviewProduct from "./PreviewProduct.astro"
 import { PRODUCTS } from "@/conts/products"
+import { SOFA_CHAISELONGUE } from "@/conts/sofaChaiselongue";
+import { SOFAS } from "@/conts/sofas";
+import { SILLON_RELAX } from "@/conts/sillonRelax";
+import { DESCANSO } from "@/conts/descanso";
+import { STOCK } from "@/conts/stock";
+
 ---
 
 <section class="px-8 py-12 mx-auto max-w-7xl md:px-12" data-section="SOFÁ CHAISELONGUE">
@@ -13,7 +19,7 @@ import { PRODUCTS } from "@/conts/products"
     
     <div class="grid md:grid-cols-2 lg:grid-cols-4 mt-12 gap-2 gap-y-12 lg:gap-y-24">
         <!-- Iterar todos los productos y mostrarlos -->
-        {PRODUCTS.map((product) => (
+        {SOFA_CHAISELONGUE.map((product) => (
             <PreviewProduct product={product}></PreviewProduct>
         ))}
     </div>
@@ -30,7 +36,7 @@ import { PRODUCTS } from "@/conts/products"
     
     <div class="grid md:grid-cols-2 lg:grid-cols-4 mt-12 gap-2 gap-y-12 lg:gap-y-24">
         <!-- Iterar todos los productos y mostrarlos -->
-        {PRODUCTS.map((product) => (
+        {SOFAS.map((product) => (
             <PreviewProduct product={product}></PreviewProduct>
         ))}  
     </div>
@@ -47,7 +53,7 @@ import { PRODUCTS } from "@/conts/products"
     
     <div class="grid md:grid-cols-2 lg:grid-cols-4 mt-12 gap-2 gap-y-12 lg:gap-y-24">
         <!-- Iterar todos los productos y mostrarlos -->
-        {PRODUCTS.map((product) => (
+        {SILLON_RELAX.map((product) => (
             <PreviewProduct product={product}></PreviewProduct>
         ))}  
     </div>
@@ -64,7 +70,7 @@ import { PRODUCTS } from "@/conts/products"
     
     <div class="grid md:grid-cols-2 lg:grid-cols-4 mt-12 gap-2 gap-y-12 lg:gap-y-24">
         <!-- Iterar todos los productos y mostrarlos -->
-        {PRODUCTS.map((product) => (
+        {DESCANSO.map((product) => (
             <PreviewProduct product={product}></PreviewProduct>
         ))}   
     </div>
@@ -81,7 +87,7 @@ import { PRODUCTS } from "@/conts/products"
     
     <div class="grid md:grid-cols-2 lg:grid-cols-4 mt-12 gap-2 gap-y-12 lg:gap-y-24">
         <!-- Iterar todos los productos y mostrarlos -->
-        {PRODUCTS.map((product) => (
+        {STOCK.map((product) => (
             <PreviewProduct product={product}></PreviewProduct>
         ))}   
     </div>
