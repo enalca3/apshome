@@ -1,60 +1,78 @@
 ---
 import Layout from '@/layouts/Layout.astro';
+import {Button} from '@/components/ui/button';
 ---
 
 <Layout>
   <main>
     <section class="px-8 py-12 mx-auto max-w-7xl md:px-12">
       <div class="flex flex-col md:flex-row gap-12">
-        {/* Google Maps Embed */}
-        <div class="w-full md:w-1/2">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3091.7185116566225!2d-0.30865502457910315!3d39.20384442856527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61b783b86d6b8f%3A0x1d0713e7dffb2429!2sAPShome!5e0!3m2!1ses!2ses!4v1747496878599!5m2!1ses!2ses"
-            width="100%" 
-            height="450" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"
-            class="rounded-xl shadow-xl"
-          >
-          </iframe>
-        </div>
-
-        {/* Contact Information */}
-        <div class="w-full md:w-1/2 space-y-8">
-          <div class="space-y-4">
-            <h1 class="text-4xl md:text-5xl font-display text-black uppercase">
-              Dónde Estamos
-            </h1>
-            <div class="prose prose-lg text-gray-600">
-              <p>
-                C/ de les palmeres, 2 - Bajo<br/>
-                46410 Sueca (Valencia)
-              </p>
+            <div class="w-full md:w-1/2">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3091.7185116566225!2d-0.30865502457910315!3d39.20384442856527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61b783b86d6b8f%3A0x1d0713e7dffb2429!2sAPShome!5e0!3m2!1ses!2ses!4v1747496878599!5m2!1ses!2ses"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="rounded-xl shadow-xl"
+                >
+                </iframe>
             </div>
-          </div>
 
-          <div class="space-y-4">
-            <h2 class="text-2xl md:text-3xl font-display text-black uppercase">
-              Contacto
-            </h2>
-            <div class="flex items-center gap-4">
-              <img 
-                src="/images/social/whatsapp.svg" 
-                alt="WhatsApp" 
-                class="w-8 h-8"
-              />
-              <a 
-                href="https://wa.me/+34694290084" 
-                class="text-xl text-gray-600 hover:text-green-600 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                694 29 00 84
-              </a>
+            <div class="w-full md:w-1/2 space-y-8">
+                <div class="space-y-4">
+                    <h1 class="text-4xl md:text-5xl font-display text-black uppercase">
+                        Dónde Estamos
+                    </h1>
+                    <div class="prose prose-lg text-gray-600">
+                        <p>
+                            C/ de les palmeres, 2 - Bajo<br/>
+                            46410 Sueca (Valencia)
+                        </p>
+                </div>
             </div>
-          </div>
+
+            <div class="space-y-4">
+                <h2 class="text-2xl md:text-3xl font-display text-black uppercase">
+                    Contacto
+                </h2>
+                <div class="flex items-center gap-4">
+                    <img 
+                        src="/images/social/whatsapp.svg" 
+                        alt="WhatsApp" 
+                        class="w-8 h-8"
+                    />
+                    <a 
+                        href="https://wa.me/+34694290084" 
+                        class="text-xl text-gray-600 hover:text-green-600 transition-colors"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        694 29 00 84
+                    </a>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <h2 class="text-2xl md:text-3xl font-display text-black uppercase">
+                Horario
+                </h2>
+                <div class="prose prose-lg text-gray-600">
+                <p>
+                    Lunes a Viernes: 10:00 - 14:00 / 16:00 - 20:00<br/>
+                    Sábados: 10:00 - 13:30
+                </p>
+            </div>
+            <div class="space-y-4">
+                <a 
+                    href="/about-us"
+                    class="flex items-center gap-4">
+                    <Button className='hover:cursor-pointer'>
+                        Sobre Nosotros
+                    </Button>
+                </a>
+            </div>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 ---
 import Layout from '@/layouts/Layout.astro';
+import {Button} from '@/components/ui/button';
 ---
 
 <Layout>
@@ -40,7 +41,18 @@ import Layout from '@/layouts/Layout.astro';
               en cada paso del proceso de selección, para asegurar que cada mueble no solo 
               se ajuste a sus espacios, sino también a su estilo de vida.
             </p>
+            </br>
+            <div class="space-y-4">
+                <a 
+                    href="/contact"
+                    class="flex items-center gap-4">
+                    <Button className='hover:cursor-pointer'>
+                        Dónde estamos
+                    </Button>
+                </a>
+            </div>
           </div>
+          
         </div>
       </div>
     </section>
