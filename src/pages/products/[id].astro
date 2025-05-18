@@ -1,8 +1,16 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import { PRODUCTS } from "@/conts/products"
+import { SOFA_CHAISELONGUE } from "@/conts/sofaChaiselongue";
+import { SOFAS } from "@/conts/sofas";
+import { SILLON_RELAX } from "@/conts/sillonRelax";
+import { DESCANSO } from "@/conts/descanso";
+import { STOCK } from "@/conts/stock";
 
 export async function getStaticPaths() {
+
+  // Combine all products into a single array
+  let PRODUCTS = [...SOFA_CHAISELONGUE, ...SOFAS, ...SILLON_RELAX, ...DESCANSO, ...STOCK];
+
   return PRODUCTS.map(product => (
   {
     params: { id: product.id },
@@ -76,14 +84,14 @@ const { product } = Astro.props;
 </Layout>
 
 <script>
-  const mainImage = document.getElementById('mainImage');
+  const mainImage = document.getElementById('mainImage') as HTMLImageElement | null;
   const thumbnails = document.querySelectorAll('.thumbnail');
 
   if (mainImage) {
     thumbnails.forEach(thumb => {
       thumb.addEventListener('click', () => {
         // Set main image src to thumbnail src
-        mainImage.src = thumb.src;
+        mainImage.src = (thumb as HTMLImageElement).src;
       });
     });
   }
