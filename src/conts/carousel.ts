@@ -3,20 +3,20 @@ import type { CarouselItem } from "../types/carousel";
 
 export const CAROUSEL_ITEMS:CarouselItem[] = [
     {
-        id: "sofa-chaise-longue-paris",
+        id: "sofa-chaiselongue-paris",
         imageUrl: "images/carousel/paris.webp",
         title: "Paris",
         price: 1428.00,
         salePrice: 1285.00,
-        link: "/products/sofa-chaise-longue-paris"
+        link: "/products/sofa-chaiselongue-paris"
     },
     {
-        id: "sofa-chaise-longue-toscama",
+        id: "sofa-chaiselongue-toscama",
         imageUrl: "images/carousel/toscama.webp",
         title: "Toscama",
         price: 967.40,
         salePrice: 899.00,
-        link: "/products/sofa-chaise-longue-toscama"
+        link: "/products/sofa-chaiselongue-toscama"
     },
     {
         id: "sofa-ibiza",
@@ -35,10 +35,10 @@ export const CAROUSEL_ITEMS:CarouselItem[] = [
         link: "/products/sofa-bella"
     },
     {
-        id: "sofa-chaise-longue-berlin",
+        id: "sofa-chaiselongue-berlin",
         imageUrl: "images/carousel/berlin.webp",
         title: "Berlin",
         price: 1184.94,
-        link: "/products/sofa-chaise-longue-berlin"
+        link: "/products/sofa-chaiselongue-berlin"
     }
 ]    

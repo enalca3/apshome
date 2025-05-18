@@ -2,10 +2,10 @@ import type { Product } from "@/types/product";
 
 export const SOFA_CHAISELONGUE: Product[] = [
     {
-        id: "sofa-chaise-longue-paris",
+        id: "sofa-chaiselongue-paris",
         name: "París",
-        description: "Sofá chaiselongue 3 plazas con arcón, brazo arcón, asiento eléctrico deslizante y puerto USB.",
-        price: 1428.00,
+        description: "Sofá chaiselongue 3 plazas + ch arcón, asiento eléctrico deslizante + USB-C. Medida total 300 cms.",
+        price: 2346.67,
         mainImage: "/images/products/paris.png",
         images: [
             "/images/products/paris.png",
@@ -24,7 +24,7 @@ export const SOFA_CHAISELONGUE: Product[] = [
         }
     },
     {
-        id: "sofa-chaise-longue-toscama",
+        id: "sofa-chaiselongue-toscama",
         name: "Toscama",
         description: "Sofá chaiselongue 3 plazas + CH fijo, brazo arco. Medida total 285 cms.",
         price: 1476.27,
@@ -46,10 +46,10 @@ export const SOFA_CHAISELONGUE: Product[] = [
         }
     },
     {
-        id: "sofa-chaise-longue-berlin",
+        id: "sofa-chaiselongue-berlin",
         name: "Berlin",
-        description: "Sofá chaiselongue 3 plazas, brazo deslizante y asiento extraible.",
-        price: 1184.94,
+        description: "Sofá chaiselongue 3 plazas + ch deslizante, asientos extraibles y brazo deslizante. Medida total 285 cms.",
+        price: 1751.93,
         mainImage: "/images/products/berlin.png",
         images: [
             "/images/products/berlin.png",
@@ -65,6 +65,70 @@ export const SOFA_CHAISELONGUE: Product[] = [
             warranty: "10 años",
             assemblyRequired: false,
         },
+    },
+    {
+        id: "sofa-chaiselongue-tecno",
+        name: "Tecno",
+        description: "Sofá chaiselongue 3 plazas ch fijo, asiento extraible y respaldo reclinable. Medida total 275 cms.",
+        price: 1226.94,
+        mainImage: "/images/products/tecno_chai.png",
+        images: [
+            "/images/products/tecno_chai.png",
+            "/images/products/tecno_chai_2.png",
+            "/images/products/tecno_chai_3.png",
+            "/images/products/tecno_chai_4.png"
+        ],
+        category: "Sofá chaiselongue",
+        specifications: {
+            material: "Tela",
+            color: "Gris",
+            dimensions: "275 x 150 x 90 cm",
+            weight: 80,
+            warranty: "2 años",
+            assemblyRequired: true,
+        }
+    },
+    {
+        id: "sofa-chaiselongue-blue",
+        name: "Blue",
+        description: "Sofá chaiselongue 3 plazas + ch arcón, brazo con dos puffs extensibles. Medida total 285 cms.",
+        price: 1756.25,
+        mainImage: "/images/products/blue.png",
+        images: [
+            "/images/products/blue.png",
+            "/images/products/blue_2.png",
+            "/images/products/blue_3.png"
+        ],
+        category: "Sofá chaiselongue",
+        specifications: {
+            material: "Tela",
+            color: "Azul",
+            dimensions: "295 x 150 x 90 cm",
+            weight: 80,
+            warranty: "2 años",
+            assemblyRequired: true,
+        }
+    },
+    {
+        id: "sofa-chaiselongue-ilusion",
+        name: "Ilusión",
+        description: "Sofá chaiselongue 3 plazas + ch fijo, asientos extensibles y respaldo reclinable. Medida total 290 cms.",
+        price: 1643.68,
+        mainImage: "/images/products/ilusion.png",
+        images: [
+            "/images/products/ilusion.png",
+            "/images/products/ilusion_2.png",
+            "/images/products/ilusion_3.png"
+        ],
+        category: "Sofá chaiselongue",
+        specifications: {
+            material: "Tela",
+            color: "Beige",
+            dimensions: "295 x 150 x 90 cm",
+            weight: 80,
+            warranty: "2 años",
+            assemblyRequired: true,
+        }
     }
 
 ] as const;

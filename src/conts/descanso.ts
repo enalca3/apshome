@@ -2,17 +2,13 @@ import type { Product } from "@/types/product";
 
 export const DESCANSO: Product[] = [
     {
-        id: "sofa-chaise-longue-berlin",
-        name: "Berlin",
-        description: "Sofá chaiselongue 3 plazas, brazo deslizante y asiento extraible.",
-        price: 1184.94,
-        mainImage: "/images/products/berlin.png",
-        images: [
-            "/images/products/berlin.png",
-            "/images/products/berlin_2.png",
-            "/images/products/berlin_3.png"
-        ],
-        category: "Sofá chaiselongue",
+        id: "descanso-pack-colchon-canape",
+        name: "Pack colchón + canapé",
+        description: "Pack colchón Descans 23 + canapé Amanda",
+        price: 683.57,
+        mainImage: "/images/logo.webp",
+        images: [],
+        category: "Descanso",
         specifications: {
             material: "Viscoelástico",
             firmness: "Media",

@@ -2,17 +2,17 @@
 export type productCategory = 'Sofá chaiselongue' | 'Sofás' | 'Sillón relax' | 'Descanso' | 'Stock';
 
 type idProduct = 
-'sofa-chaise-longue-paris' | 
+'sofa-chaiselongue-paris' | 
 'sofa-ibiza' | 
 'sofa-bella' | 
-'sofa-chaise-longue-toscama' | 
+'sofa-chaiselongue-toscama' | 
 'stock-sillon-relax-beni' |
-'sofa-chaise-longue-berlin' | 
-'sofa-chaise-longue-techno' |
-'sofa-chaise-longue-blue' |
+'sofa-chaiselongue-berlin' | 
+'sofa-chaiselongue-tecno' |
+'sofa-chaiselongue-blue' |
 'sillon-relax-oregon' |
 'sillon-relax-paris' |
-'sofa-chaise-longue-ilusion' |
+'sofa-chaiselongue-ilusion' |
 'descanso-pack-colchon-canape' |
 'stock-sofas-night' |
 'stock-sofas-luz' |
@@ -27,7 +27,7 @@ type productName =
 'Toscama' | 
 'Beni' | 
 'Berlin' | 
-'Techno' |
+'Tecno' |
 'Blue' |
 'Oregón' |
 'Ilusión' |

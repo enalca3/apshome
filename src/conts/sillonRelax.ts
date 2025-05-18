@@ -4,18 +4,37 @@ export const SILLON_RELAX: Product[] = [
     {
         id: "sillon-relax-oregon",
         name: "Oregón",
-        description: "Butaca fija de diseño moderno y elegante.",
-        price: 219.99,
-        mainImage: "/images/products/beni.png",
+        description: "Sillón relax elevador 1 motor.",
+        price: 564.27,
+        mainImage: "/images/products/oregon.png",
         images: [
-            "/images/products/beni.png",
-            "/images/products/beni_2.png",
-            "/images/products/beni_3.png"
+            "/images/products/oregon.png",
+            "/images/products/oregon_2.png",
+            "/images/products/oregon_3.png",
+            "/images/products/oregon_4.png"
         ],
         category: "Sillón relax",
         specifications: {
             material: "Tela",
             color: "Gris",
+            dimensions: "80 x 90 x 100 cm",
+            weight: 20,
+            warranty: "2 años",
+            assemblyRequired: false,
+        },
+    },
+    {
+        id: "sillon-relax-paris",
+        name: "París",
+        description: "Sillón relax eléctrico con puerto USB-C.",
+        price: 767.26,
+        mainImage: "/images/logo.webp",
+        images: [
+        ],
+        category: "Sillón relax",
+        specifications: {
+            material: "Tela",
+            color: "Beige",
             dimensions: "80 x 90 x 100 cm",
             weight: 20,
             warranty: "2 años",
