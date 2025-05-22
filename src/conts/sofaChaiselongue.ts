@@ -11,7 +11,7 @@ export const SOFA_CHAISELONGUE: Product[] = [
             "/images/products/paris.png",
             "/images/products/paris_2.png",
             "/images/products/paris_3.png",
-            "/images/products/paris_4.png"
+            "/images/products/paris_4.webp"
         ],
         category: "Sofá chaiselongue",
         specifications: {
@@ -32,8 +32,7 @@ export const SOFA_CHAISELONGUE: Product[] = [
         images: [
             "/images/products/toscama.png",
             "/images/products/toscama_2.png",
-            "/images/products/toscama_3.png",
-            "/images/products/toscama_4.png"
+            "/images/products/toscama_3.png"
         ],
         category: "Sofá chaiselongue",
         specifications: {

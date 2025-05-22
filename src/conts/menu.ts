@@ -4,10 +4,12 @@ export const menuSofaChaiselongue: MenuSection[] = [
     {
         title: "SOFÁ CHAISELONGUE",
         items: [
-            { title: "Paris", href: "/products/sofa-chaise-longue-paris" },
-            { title: "Toscama", href: "/products/sofa-chaise-longue-toscama" },
-            { title: "Ibiza", href: "/products/sofa-ibiza" },
-            { title: "Bella", href: "/products/sofa-bella" }
+            { title: "Paris", href: "/products/sofa-chaiselongue-paris" },
+            { title: "Toscama", href: "/products/sofa-chaiselongue-toscama" },
+            { title: "Berlin", href: "/products/sofa-chaiselongue-berlin" },
+            { title: "Tecno", href: "/products/sofa-chaiselongue-tecno" },
+            { title: "Blue", href: "/products/sofa-chaiselongue-blue" },
+            { title: "Ilusión", href: "/products/sofa-chaiselongue-ilusion" }
         ]
     }
     // Add more sections as needed
@@ -16,8 +18,6 @@ export const menuSofa: MenuSection[] = [
     {
         title: "SOFÁS",
         items: [
-            { title: "Paris", href: "/products/sofa-chaise-longue-paris" },
-            { title: "Toscama", href: "/products/sofa-chaise-longue-toscama" },
             { title: "Ibiza", href: "/products/sofa-ibiza" },
             { title: "Bella", href: "/products/sofa-bella" }
         ]
@@ -28,10 +28,8 @@ export const menuSillonRelax: MenuSection[] = [
     {
         title: "SILLÓN RELAX",
         items: [
-            { title: "Paris", href: "/products/sofa-chaise-longue-paris" },
-            { title: "Toscama", href: "/products/sofa-chaise-longue-toscama" },
-            { title: "Ibiza", href: "/products/sofa-ibiza" },
-            { title: "Bella", href: "/products/sofa-bella" }
+            { title: "Oregón", href: "/products/sillon-relax-oregon" },
+            { title: "París", href: "/products/sillon-relax-paris" }
         ]
     }
     // Add more sections as needed
@@ -40,10 +38,7 @@ export const menuDescanso: MenuSection[] = [
     {
         title: "DESCANSO",
         items: [
-            { title: "Paris", href: "/products/sofa-chaise-longue-paris" },
-            { title: "Toscama", href: "/products/sofa-chaise-longue-toscama" },
-            { title: "Ibiza", href: "/products/sofa-ibiza" },
-            { title: "Bella", href: "/products/sofa-bella" }
+            { title: "Pack colchón + canapé", href: "/products/descanso-pack-colchon-canape" }
         ]
     }
     // Add more sections as needed
@@ -52,10 +47,12 @@ export const menuStock: MenuSection[] = [
     {
         title: "STOCK",
         items: [
-            { title: "Paris", href: "/products/sofa-chaise-longue-paris" },
-            { title: "Toscama", href: "/products/sofa-chaise-longue-toscama" },
-            { title: "Ibiza", href: "/products/sofa-ibiza" },
-            { title: "Bella", href: "/products/sofa-bella" }
+            { title: "Beni", href: "/products/stock-sillon-relax-beni" },
+            { title: "Night", href: "/products/stock-sofas-night" },
+            { title: "Heart", href: "/products/stock-sillon-relax-heart" },
+            { title: "Luz", href: "/products/stock-sofas-luz" },
+            { title: "Ruth", href: "/products/stock-sofas-ruth" },
+            { title: "Hot", href: "/products/stock-sillon-relax-hot" },
         ]
     }
     // Add more sections as needed
