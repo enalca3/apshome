@@ -6,39 +6,39 @@ export const CAROUSEL_ITEMS:CarouselItem[] = [
         id: "sofa-chaiselongue-paris",
         imageUrl: "images/carousel/paris.webp",
         title: "Paris",
-        price: 1428.00,
-        salePrice: 1285.00,
+        price: 2500,
+        salePrice: 2346.67,
         link: "/products/sofa-chaiselongue-paris"
     },
     {
         id: "sofa-chaiselongue-toscama",
         imageUrl: "images/carousel/toscama.webp",
         title: "Toscama",
-        price: 967.40,
-        salePrice: 899.00,
+        price: 1500,
+        salePrice: 1476.27,
         link: "/products/sofa-chaiselongue-toscama"
     },
     {
         id: "sofa-ibiza",
         imageUrl: "images/carousel/ibiza.webp",
         title: "Ibiza",
-        price: 1115.44,
-        salePrice: 999.00,
+        price: 1200,
+        salePrice: 1115.44,
         link: "/products/sofa-ibiza"
     },
     {
         id: "sofa-bella",
         imageUrl: "images/carousel/bella.webp",
         title: "Bella",
-        price: 779.38,
-        salePrice: 699.00,
+        price: 800,
+        salePrice: 779.38,
         link: "/products/sofa-bella"
     },
     {
         id: "sofa-chaiselongue-berlin",
         imageUrl: "images/carousel/berlin.webp",
         title: "Berlin",
-        price: 1184.94,
+        price: 1751.93,
         link: "/products/sofa-chaiselongue-berlin"
     }
 ]    
