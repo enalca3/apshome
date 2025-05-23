@@ -36,7 +36,7 @@ export default function AppMenuBar({ menuItems }: Props) {
                 <MenubarTrigger>
                     <Menu className="mr-2 h-4 w-4" />
                 </MenubarTrigger>
-                <MenubarContent>
+                <MenubarContent forceMount>
                     {menuItems.map((section) => (
                         <MenubarItem 
                             key={section[0].title} 
