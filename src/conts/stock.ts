@@ -49,7 +49,7 @@ export const STOCK: Product[] = [
         name: "Heart",
         description: "Sillón relax eléctrico con pulsador.",
         price: 702.19,
-        mainImage: "/images/logo.webp",
+        mainImage: "/images/products/heart.png",
         images: [],
         category: "Sillón relax",
         specifications: {

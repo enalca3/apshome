@@ -1,4 +1,6 @@
 ---
+import { formatPrice } from "@/lib/utils";
+
 const { product } = Astro.props;
 ---
 
@@ -12,7 +14,7 @@ const { product } = Astro.props;
     <div class="p-4">
         <div class="flex items-center justify-between space-x-8 text-base font-medium text-black">
             <span class="text-sm font-semibold text-gray-900">{product.name}</span>
-            <span class="text-sm font-semibold text-gray-900">{product.price} €</span>
+            <span class="text-sm font-semibold text-gray-900">{formatPrice(product.price)}</span>
         </div>
     </div>
     

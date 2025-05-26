@@ -4,6 +4,7 @@ import { SOFA_CHAISELONGUE } from "@/conts/sofaChaiselongue";
 import { SOFAS } from "@/conts/sofas";
 import { SILLON_RELAX } from "@/conts/sillonRelax";
 import { STOCK } from "@/conts/stock";
+import { formatPrice } from "@/lib/utils";
 
 export async function getStaticPaths() {
 
@@ -50,7 +51,7 @@ function isStock(product: { id: string; }) {
             </p>
             <dl class="flex flex-col gap-2 mt-8">
               <div class="border border-gray-200 p-6 rounded-lg hover:shadow-2xl duration-200 bg-gray-50">
-                <h2 class="text-3xl lg:text-5xl text-balance text-black text-center transform transition-transform hover:scale-110 duration-300">{product.price} €</h2>
+                <h2 class="text-3xl lg:text-5xl text-balance text-black text-center transform transition-transform hover:scale-110 duration-300">{formatPrice(product.price)}</h2>
               </div>
             </dl>
             <div class="border-t mt-10 pt-10 border-gray-200">

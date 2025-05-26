@@ -11,6 +11,7 @@ import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
 
 import { CAROUSEL_ITEMS } from "@/conts/carousel"
+import { formatPrice } from "@/lib/utils";
 
 export default function Carrusel() {
 
@@ -44,16 +45,16 @@ export default function Carrusel() {
                     {item.salePrice && (                    
                       <div className="flex flex-col gap-2">
                         <h2 className="text-3xl lg:text-5xl text-black text-right">
-                          {item.salePrice} €
+                          {formatPrice(item.salePrice)}
                         </h2>
                         <p className="text-xl lg:text-2xl text-gray-600 text-right line-through">
-                          {item.price} €
+                          {formatPrice(item.price)}
                         </p>
                       </div>
                     )}
                     {!item.salePrice && (
                       <h2 className="text-3xl lg:text-5xl text-black text-right">
-                        {item.price} €
+                        {formatPrice(item.price)}
                       </h2>
                     )}
                   </div>

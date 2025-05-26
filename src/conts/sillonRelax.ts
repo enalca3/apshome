@@ -28,7 +28,7 @@ export const SILLON_RELAX: Product[] = [
         name: "París",
         description: "Sillón relax eléctrico con puerto USB-C.",
         price: 700,
-        mainImage: "/images/logo.webp",
+        mainImage: "/images/products/paris_sillon.png",
         images: [
         ],
         category: "Sillón relax",
