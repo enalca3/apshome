@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import Advice from '../components/Advice.astro';
 
 ---
 
@@ -31,6 +32,7 @@ import Header from '../components/Header.astro';
 	<body class="bg-white flex flex-col min-h-svh">
 		<Header></Header>
 		<slot></slot>
+		<Advice></Advice>
 		<Footer></Footer>
 	</body>
 </html>
