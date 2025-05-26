@@ -4,7 +4,7 @@ export const SOFA_CHAISELONGUE: Product[] = [
     {
         id: "sofa-chaiselongue-paris",
         name: "París",
-        description: "Sofá chaiselongue 3 plazas + ch arcón, asiento eléctrico deslizante + USB-C. Medida total 300 cms.",
+        description: "Sofá chaiselongue 3 plazas + ch arcón, asiento eléctrico deslizante + USB-C.",
         price: 1800,
         mainImage: "/images/products/paris.png",
         images: [
@@ -26,7 +26,7 @@ export const SOFA_CHAISELONGUE: Product[] = [
     {
         id: "sofa-chaiselongue-toscama",
         name: "Toscama",
-        description: "Sofá chaiselongue 3 plazas + CH fijo, brazo arco. Medida total 285 cms.",
+        description: "Sofá chaiselongue 3 plazas + CH fijo, brazo arco.",
         price: 1260,
         mainImage: "/images/products/toscama.png",
         images: [
@@ -47,7 +47,7 @@ export const SOFA_CHAISELONGUE: Product[] = [
     {
         id: "sofa-chaiselongue-berlin",
         name: "Berlin",
-        description: "Sofá chaiselongue 3 plazas + ch deslizante, asientos extraibles y brazo deslizante. Medida total 285 cms.",
+        description: "Sofá chaiselongue 3 plazas + ch deslizante, asientos extraibles y brazo deslizante.",
         price: 1751.93,
         mainImage: "/images/products/berlin.png",
         images: [
@@ -68,7 +68,7 @@ export const SOFA_CHAISELONGUE: Product[] = [
     {
         id: "sofa-chaiselongue-tecno",
         name: "Tecno",
-        description: "Sofá chaiselongue 3 plazas ch fijo, asiento extraible y respaldo reclinable. Medida total 275 cms.",
+        description: "Sofá chaiselongue 3 plazas ch fijo, asiento extraible y respaldo reclinable.",
         price: 1100,
         mainImage: "/images/products/tecno_chai.png",
         images: [
@@ -90,7 +90,7 @@ export const SOFA_CHAISELONGUE: Product[] = [
     {
         id: "sofa-chaiselongue-blue",
         name: "Blue",
-        description: "Sofá chaiselongue 3 plazas + ch arcón, brazo con dos puffs extensibles. Medida total 285 cms.",
+        description: "Sofá chaiselongue 3 plazas + ch arcón, brazo con dos puffs extensibles.",
         price: 1500,
         mainImage: "/images/products/blue.png",
         images: [
@@ -111,7 +111,7 @@ export const SOFA_CHAISELONGUE: Product[] = [
     {
         id: "sofa-chaiselongue-ilusion",
         name: "Ilusión",
-        description: "Sofá chaiselongue 3 plazas + ch fijo, asientos extensibles y respaldo reclinable. Medida total 290 cms.",
+        description: "Sofá chaiselongue 3 plazas + ch fijo, asientos extensibles y respaldo reclinable.",
         price: 1250,
         mainImage: "/images/products/ilusion.png",
         images: [

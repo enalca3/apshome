@@ -4,7 +4,7 @@ export const SOFAS: Product[] = [
     {
         id: "sofa-ibiza",
         name: "Ibiza",
-        description: "Sofá de dos plazas y media con un diseño contemporáneo.",
+        description: "Sofá de tres plazas, asientos extensibles y brazo abatible.",
         price: 1436,
         mainImage: "/images/products/ibiza.png",
         images: [
@@ -26,7 +26,7 @@ export const SOFAS: Product[] = [
     {
         id: "sofa-bella",
         name: "Bella",
-        description: "Sofá cama con apertura italiana.",
+        description: "Sofá cama con apertura italiana, colchón 140 x 190 cms. 14 cms de alto con viscoelástica.",
         price: 870,
         mainImage: "/images/products/bella.png",
         images: [
