@@ -1,5 +1,5 @@
 
-export type productCategory = 'Sofá chaiselongue' | 'Sofás' | 'Sillón relax' | 'Descanso' | 'Stock';
+export type productCategory = 'Sofá chaiselongue' | 'Sofás' | 'Sillón relax' | 'Stock';
 
 type idProduct = 
 'sofa-chaiselongue-paris' | 
@@ -13,7 +13,6 @@ type idProduct =
 'sillon-relax-oregon' |
 'sillon-relax-paris' |
 'sofa-chaiselongue-ilusion' |
-'descanso-pack-colchon-canape' |
 'stock-sofas-night' |
 'stock-sofas-luz' |
 'stock-sillon-relax-heart' |
@@ -31,7 +30,6 @@ type productName =
 'Blue' |
 'Oregón' |
 'Ilusión' |
-'Pack colchón + canapé' |
 'Night' |
 'Heart' |
 'Luz' |

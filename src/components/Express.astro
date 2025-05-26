@@ -3,7 +3,6 @@ import PreviewProduct from "./PreviewProduct.astro"
 import { SOFA_CHAISELONGUE } from "@/conts/sofaChaiselongue";
 import { SOFAS } from "@/conts/sofas";
 import { SILLON_RELAX } from "@/conts/sillonRelax";
-import { DESCANSO } from "@/conts/descanso";
 import { STOCK } from "@/conts/stock";
 
 ---
@@ -57,23 +56,6 @@ import { STOCK } from "@/conts/stock";
         ))}  
     </div>
 
-</section>
-
-<section class="px-8 py-12 mx-auto max-w-7xl md:px-12" data-section="DESCANSO">
-
-    <div class="border-b border-gray-200 pb-5">
-        <h2 class="text-3xl font-semibold text-black">
-            DESCANSO
-        </h2>
-    </div>
-    
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 mt-12 gap-2 gap-y-12 lg:gap-y-24">
-        <!-- Iterar todos los productos y mostrarlos -->
-        {DESCANSO.map((product) => (
-            <PreviewProduct product={product}></PreviewProduct>
-        ))}   
-    </div>
-    
 </section>
 
 <section class="px-8 py-12 mx-auto max-w-7xl md:px-12" data-section="STOCK">

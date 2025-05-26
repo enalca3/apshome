@@ -5,7 +5,7 @@ export const SOFAS: Product[] = [
         id: "sofa-ibiza",
         name: "Ibiza",
         description: "Sofá de dos plazas y media con un diseño contemporáneo.",
-        price: 1115.44,
+        price: 1436,
         mainImage: "/images/products/ibiza.png",
         images: [
             "/images/products/ibiza.png",
@@ -27,7 +27,7 @@ export const SOFAS: Product[] = [
         id: "sofa-bella",
         name: "Bella",
         description: "Sofá cama con apertura italiana.",
-        price: 779.38,
+        price: 870,
         mainImage: "/images/products/bella.png",
         images: [
             "/images/products/bella.png",

@@ -5,7 +5,7 @@ export const SOFA_CHAISELONGUE: Product[] = [
         id: "sofa-chaiselongue-paris",
         name: "París",
         description: "Sofá chaiselongue 3 plazas + ch arcón, asiento eléctrico deslizante + USB-C. Medida total 300 cms.",
-        price: 2346.67,
+        price: 1800,
         mainImage: "/images/products/paris.png",
         images: [
             "/images/products/paris.png",
@@ -27,7 +27,7 @@ export const SOFA_CHAISELONGUE: Product[] = [
         id: "sofa-chaiselongue-toscama",
         name: "Toscama",
         description: "Sofá chaiselongue 3 plazas + CH fijo, brazo arco. Medida total 285 cms.",
-        price: 1476.27,
+        price: 1260,
         mainImage: "/images/products/toscama.png",
         images: [
             "/images/products/toscama.png",
@@ -69,7 +69,7 @@ export const SOFA_CHAISELONGUE: Product[] = [
         id: "sofa-chaiselongue-tecno",
         name: "Tecno",
         description: "Sofá chaiselongue 3 plazas ch fijo, asiento extraible y respaldo reclinable. Medida total 275 cms.",
-        price: 1226.94,
+        price: 1100,
         mainImage: "/images/products/tecno_chai.png",
         images: [
             "/images/products/tecno_chai.png",
@@ -91,7 +91,7 @@ export const SOFA_CHAISELONGUE: Product[] = [
         id: "sofa-chaiselongue-blue",
         name: "Blue",
         description: "Sofá chaiselongue 3 plazas + ch arcón, brazo con dos puffs extensibles. Medida total 285 cms.",
-        price: 1756.25,
+        price: 1500,
         mainImage: "/images/products/blue.png",
         images: [
             "/images/products/blue.png",
@@ -112,7 +112,7 @@ export const SOFA_CHAISELONGUE: Product[] = [
         id: "sofa-chaiselongue-ilusion",
         name: "Ilusión",
         description: "Sofá chaiselongue 3 plazas + ch fijo, asientos extensibles y respaldo reclinable. Medida total 290 cms.",
-        price: 1643.68,
+        price: 1250,
         mainImage: "/images/products/ilusion.png",
         images: [
             "/images/products/ilusion.png",

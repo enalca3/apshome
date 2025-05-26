@@ -3,13 +3,12 @@ import Layout from "@/layouts/Layout.astro";
 import { SOFA_CHAISELONGUE } from "@/conts/sofaChaiselongue";
 import { SOFAS } from "@/conts/sofas";
 import { SILLON_RELAX } from "@/conts/sillonRelax";
-import { DESCANSO } from "@/conts/descanso";
 import { STOCK } from "@/conts/stock";
 
 export async function getStaticPaths() {
 
   // Combine all products into a single array
-  let PRODUCTS = [...SOFA_CHAISELONGUE, ...SOFAS, ...SILLON_RELAX, ...DESCANSO, ...STOCK];
+  let PRODUCTS = [...SOFA_CHAISELONGUE, ...SOFAS, ...SILLON_RELAX, ...STOCK];
 
   return PRODUCTS.map(product => (
   {
