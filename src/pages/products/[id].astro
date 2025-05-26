@@ -18,6 +18,12 @@ export async function getStaticPaths() {
 }
 const { product } = Astro.props;
 
+function isStock(product: { id: string; }) {
+  return product.id.startsWith('stock-');
+};
+
+
+
 ---
 <Layout> 
   <section>
@@ -56,22 +62,26 @@ const { product } = Astro.props;
                 <img src=/images/products/colors/ibiza-magia-26.png alt={product.name} class="object-cover aspect-square rounded-full w-1/8 border-6 border-gray-200" loading="lazy" />
               </div>
             </div>
-            <div class="border-t mt-10 pt-10 border-gray-200">
-              <h3 class="text-base font-semibold text-black">ESPECIFICACIONES TÉCNICAS</h3>
-              <div class="text-gray-600 mt-4 prose prose-sm">
-                <ul class="list-disc list-inside space-y-2">
-                  <li>{product.specifications.material}</li>
-                </ul>
+            {!isStock(product) && (
+              <div class="border-t mt-10 pt-10 border-gray-200">
+                <h3 class="text-base font-semibold text-black">ESPECIFICACIONES TÉCNICAS</h3>
+                <div class="text-gray-600 mt-4 prose prose-sm">
+                  <ul class="list-disc list-inside space-y-2">
+                    <li>{product.specifications.material}</li>
+                  </ul>
+                </div>  
               </div>  
-            </div>  
-            <div class="border-t mt-10 pt-10 border-gray-200">
-              <h3 class="text-base font-semibold text-black">CARACTERÍSTICAS</h3>
-              <div class="text-gray-600 mt-4 prose prose-sm">
-                <ul class="list-disc list-inside space-y-2">
-                  <li>{product.specifications.material}</li>
-                </ul>
-              </div>  
-            </div>
+              <div class="border-t mt-10 pt-10 border-gray-200">
+                <h3 class="text-base font-semibold text-black">CARACTERÍSTICAS</h3>
+                <div class="text-gray-600 mt-4 prose prose-sm">
+                  <ul class="list-disc list-inside space-y-2">
+                    <li>{product.specifications.material}</li>
+                  </ul>
+                </div>  
+              </div>
+            )}
+
+            
             
           </div>
         </div>
