@@ -13,6 +13,11 @@ export const SILLON_RELAX: Product[] = [
             "/images/products/oregon_3.png",
             "/images/products/oregon_4.png"
         ],
+        colors: [
+            "/images/products/colors/oregon_1.png",
+            "/images/products/colors/oregon_2.png",
+            "/images/products/colors/oregon_3.png"
+        ],
         category: "Sillón relax",
         specifications: {
             material: "Tela",
@@ -30,6 +35,11 @@ export const SILLON_RELAX: Product[] = [
         price: 700,
         mainImage: "/images/products/paris_sillon.png",
         images: [
+        ],
+        colors: [
+            "/images/products/colors/paris_chai_azul.png",
+            "/images/products/colors/paris_chai_gris_osc.png",
+            "/images/products/colors/paris_chai_gris_cla.png"
         ],
         category: "Sillón relax",
         specifications: {

@@ -58,15 +58,16 @@ function isStock(product: { id: string; }) {
                 <h2 class="text-3xl lg:text-5xl text-balance text-black text-center transform transition-transform hover:scale-110 duration-300">{formatPrice(product.price)}</h2>
               </div>
             </dl>
-            <div class="border-t mt-10 pt-10 border-gray-200">
-              <h3 class="text-xl lg:text-3xl font-semibold text-black">COLORES</h3>
-              <div class="flex items-center space-x-4 mt-4
-               md:mr-6">
-                <img src=/images/products/colors/ibiza-magia-3.png alt={product.name} class="object-cover aspect-square rounded-full w-1/8 border-6 border-gray-200" loading="lazy" />
-                <img src=/images/products/colors/ibiza-magia-20.png alt={product.name} class="object-cover aspect-square rounded-full w-1/8 border-6 border-gray-200" loading="lazy" />
-                <img src=/images/products/colors/ibiza-magia-26.png alt={product.name} class="object-cover aspect-square rounded-full w-1/8 border-6 border-gray-200" loading="lazy" />
+            {product.colors && product.colors.length > 0 && (
+              <div class="border-t mt-10 pt-10 border-gray-200">
+                <h3 class="text-xl lg:text-3xl font-semibold text-black">COLORES</h3>
+                <div class="flex items-center space-x-4 mt-4 md:mr-6">
+                  {product.colors && product.colors.map((color) => (
+                    <img src={color} alt={product.name} class="object-cover aspect-square rounded-full w-1/8 border-6 border-gray-200" loading="lazy" />
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
             {!isStock(product) && (
               <div class="border-t mt-10 pt-10 border-gray-200">
                 <h3 class="text-base font-semibold text-black">ESPECIFICACIONES TÉCNICAS</h3>

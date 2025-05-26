@@ -13,6 +13,11 @@ export const SOFA_CHAISELONGUE: Product[] = [
             "/images/products/paris_3.png",
             "/images/products/paris_4.webp"
         ],
+        colors: [
+            "/images/products/colors/paris_chai_azul.png",
+            "/images/products/colors/paris_chai_gris_osc.png",
+            "/images/products/colors/paris_chai_gris_cla.png"
+        ],
         category: "Sofá chaiselongue",
         specifications: {
             material: "Tela",
@@ -34,6 +39,11 @@ export const SOFA_CHAISELONGUE: Product[] = [
             "/images/products/toscama_2.png",
             "/images/products/toscama_3.png"
         ],
+        colors: [
+            "/images/products/colors/toscama_gris.png",
+            "/images/products/colors/toscama_azul.png",
+            "/images/products/colors/toscama_ama.png"
+        ],
         category: "Sofá chaiselongue",
         specifications: {
             material: "Tela",
@@ -54,6 +64,11 @@ export const SOFA_CHAISELONGUE: Product[] = [
             "/images/products/berlin.png",
             "/images/products/berlin_2.png",
             "/images/products/berlin_3.png"
+        ],
+        colors: [
+            "/images/products/colors/berlin_gris.png",
+            "/images/products/colors/berlin_azul.png",
+            "/images/products/colors/berlin_marron.png"
         ],
         category: "Sofá chaiselongue",
         specifications: {
@@ -77,6 +92,11 @@ export const SOFA_CHAISELONGUE: Product[] = [
             "/images/products/tecno_chai_3.png",
             "/images/products/tecno_chai_4.png"
         ],
+        colors: [
+            "/images/products/colors/tecno_1.png",
+            "/images/products/colors/tecno_2.png",
+            "/images/products/colors/tecno_3.png"
+        ],
         category: "Sofá chaiselongue",
         specifications: {
             material: "Tela",
@@ -98,6 +118,11 @@ export const SOFA_CHAISELONGUE: Product[] = [
             "/images/products/blue_2.png",
             "/images/products/blue_3.png"
         ],
+        colors: [
+            "/images/products/colors/berlin_gris.png",
+            "/images/products/colors/berlin_azul.png",
+            "/images/products/colors/berlin_marron.png"
+        ],
         category: "Sofá chaiselongue",
         specifications: {
             material: "Tela",
@@ -118,6 +143,11 @@ export const SOFA_CHAISELONGUE: Product[] = [
             "/images/products/ilusion.png",
             "/images/products/ilusion_2.png",
             "/images/products/ilusion_3.png"
+        ],
+        colors: [
+            "/images/products/colors/ilusion_1.png",
+            "/images/products/colors/ilusion_2.png",
+            "/images/products/colors/ilusion_3.png"
         ],
         category: "Sofá chaiselongue",
         specifications: {

@@ -43,6 +43,7 @@ export interface Product {
     price: number;
     mainImage: string;
     images: string[];
+    colors?: string[];
     category: productCategory;
     specifications: {
         [key: string]: string | number | boolean;

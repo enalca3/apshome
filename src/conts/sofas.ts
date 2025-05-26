@@ -13,6 +13,11 @@ export const SOFAS: Product[] = [
             "/images/products/ibiza_3.png",
             "/images/products/ibiza_4.png"
         ],
+        colors: [
+            "/images/products/colors/ibiza-magia-3.png",
+            "/images/products/colors/ibiza-magia-26.png",
+            "/images/products/colors/ibiza-magia-20.png"
+        ],
         category: "Sofás",
         specifications: {
             material: "Cuero sintético",
@@ -34,6 +39,11 @@ export const SOFAS: Product[] = [
             "/images/products/bella_2.png",
             "/images/products/bella_3.png",
             "/images/products/bella_4.png"
+        ],
+        colors: [
+            "/images/products/colors/bella_1.png",
+            "/images/products/colors/bella_2.png",
+            "/images/products/colors/bella_3.png"
         ],
         category: "Sofás",
         specifications: {
