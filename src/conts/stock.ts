@@ -19,13 +19,9 @@ export const STOCK: Product[] = [
         ],
         category: "Sillón relax",
         specifications: {
-            material: "Tela",
-            color: "Gris",
-            dimensions: "80 x 90 x 100 cm",
-            weight: 20,
-            warranty: "2 años",
-            assemblyRequired: false,
-        },
+            composicion: "100% poliéster.",
+            resistencia_abrasion: "50.000 ciclos."
+        }
     },
     {
         id: "stock-sofas-night",
@@ -46,13 +42,17 @@ export const STOCK: Product[] = [
         ],
         category: "Sofás",
         specifications: {
-            material: "Tela",
-            color: "Gris",
-            dimensions: "211 x 90 x 85 cm",
-            weight: 50,
-            warranty: "2 años",
-            assemblyRequired: true,
+            composicion: "100% poliéster.",
+            resistencia_abrasion: "20.000 ciclos.",
+            resistencia_piling: "4-5."
         },
+        features: {
+            estructura: "Mecanismo cama de fácil apertura tipo italiano, con malla electrosoldada y cincha tipo nea en la sentada. Resto de estructura en madera de pino.",
+            asientos: "Espuma de poliuretano de 30 kg. Recubierta de poliéster. Desenfundables para facilitar su limpieza.",
+            respaldo: "Fibra hueca siliconada. 100% desenfundables para facilitar su limpieza.",
+            patas: "Madera color wengué.",
+            brazos: "Desenfundables en fibra hueca 100%.",
+        }
     },
     {
         id: "stock-sillon-relax-heart",
@@ -68,13 +68,17 @@ export const STOCK: Product[] = [
         ],
         category: "Sillón relax",
         specifications: {
-            material: "Tela",
-            color: "Beige",
-            dimensions: "80 x 90 x 100 cm",
-            weight: 20,
-            warranty: "2 años",
-            assemblyRequired: false,
+            composicion: "100% poliéster.",
+            resistencia_abrasion: "25.000 ciclos.",
+            resistencia_piling: "4-5."
         },
+        features: {
+            estructura: "Madera de pino.",
+            asientos: "Espuma de poliuretano de alta densidad.",
+            respaldo: "Almohadas de fibra hueca siliconada.",
+            patas: "Madera color wengué.",
+            brazos: "Desenfundables en fibra hueca 100%.",
+        }
     }, 
     {
         id: "stock-sofas-luz",
@@ -95,13 +99,17 @@ export const STOCK: Product[] = [
         ],
         category: "Sofás",
         specifications: {
-            material: "Tela",
-            color: "Beige",
-            dimensions: "185 x 90 x 85 cm",
-            weight: 50,
-            warranty: "2 años",
-            assemblyRequired: true,
+            composicion: "100% poliéster.",
+            resistencia_abrasion: "25.000 ciclos.",
+            resistencia_piling: "4."
         },
+        features: {
+            estructura: "Madera de pino y tablero aglomerado. Cinchas elásticas.",
+            asientos: "Goma 25 kg con labio.",
+            respaldo: "Mezcla de fibra y goma.",
+            patas: "Madera color wengué",
+            brazos: "Desenfundables en fibra hueca 100%",
+        }
     },
     {
         id: "stock-sofas-ruth",
@@ -122,13 +130,17 @@ export const STOCK: Product[] = [
         ],
         category: "Sofás",
         specifications: {
-            material: "Tela",
-            color: "Beige",
-            dimensions: "197 x 90 x 85 cm",
-            weight: 50,
-            warranty: "2 años",
-            assemblyRequired: true,
+            composicion: "100% poliéster.",
+            resistencia_abrasion: "25.000 ciclos.",
+            resistencia_piling: "4-5."
         },
+        features: {
+            estructura: "Madera de pino de alta calidad",
+            asientos: "Espuma de poliuretano de 28 kg. Recubierta de poliéster. Desenfundables para facilitar el lavado.",
+            respaldo: "Fibra hueca siliconada. 100% desenfundables para facilitar el lavado.",
+            patas: "Madera color wengué",
+            brazos: "Desenfundables en fibra hueca 100%",
+        }
     }, 
     {
         id: "stock-sillon-relax-hot",
@@ -147,13 +159,6 @@ export const STOCK: Product[] = [
             "/images/products/colors/hot_2.png"
         ],
         category: "Sillón relax",
-        specifications: {
-            material: "Tela",
-            color: "Beige",
-            dimensions: "80 x 90 x 100 cm",
-            weight: 20,
-            warranty: "2 años",
-            assemblyRequired: false,
-        },
+        
     }
 ] as const;

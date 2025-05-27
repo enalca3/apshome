@@ -45,7 +45,10 @@ export interface Product {
     images: string[];
     colors?: string[];
     category: productCategory;
-    specifications: {
+    specifications?: {
+        [key: string]: string | number | boolean;
+    };
+    features?: {
         [key: string]: string | number | boolean;
     };
 }

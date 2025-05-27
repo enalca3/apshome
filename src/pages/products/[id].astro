@@ -73,22 +73,50 @@ function isStock(product: { id: string; }) {
               </div>
             )}
             {!isStock(product) && (
-              <div class="border-t mt-10 pt-10 border-gray-200">
-                <h3 class="text-base font-semibold text-black">ESPECIFICACIONES TÉCNICAS</h3>
-                <div class="text-gray-600 mt-4 prose prose-sm">
-                  <ul class="list-disc list-inside space-y-2">
-                    <li>{product.specifications.material}</li>
-                  </ul>
-                </div>  
-              </div>  
-              <div class="border-t mt-10 pt-10 border-gray-200">
-                <h3 class="text-base font-semibold text-black">CARACTERÍSTICAS</h3>
-                <div class="text-gray-600 mt-4 prose prose-sm">
-                  <ul class="list-disc list-inside space-y-2">
-                    <li>{product.specifications.material}</li>
-                  </ul>
-                </div>  
-              </div>
+              <>
+                {product.specifications && (
+                  <div class="border-t mt-10 pt-10 border-gray-200">
+                    <h3 class="text-base font-semibold text-black">ESPECIFICACIONES TÉCNICAS</h3>
+                    <div class="text-gray-600 mt-4 prose prose-sm">
+                      <ul class="list-disc list-inside space-y-2">
+                        {product.specifications.composicion && (
+                          <li>Composición: {product.specifications.composicion}</li>
+                        )}
+                        {product.specifications.resistencia_abrasion && (
+                          <li>Resistencia a la abrasión: {product.specifications.resistencia_abrasion}</li>
+                        )}
+                        {product.specifications.resistencia_piling && (
+                          <li>Resistencia al pilling: {product.specifications.resistencia_piling}</li>
+                        )}
+                      </ul>
+                    </div>  
+                  </div>
+                )}
+                {product.features && (  
+                  <div class="border-t mt-10 pt-10 border-gray-200">
+                    <h3 class="text-base font-semibold text-black">CARACTERÍSTICAS</h3>
+                    <div class="text-gray-600 mt-4 prose prose-sm">
+                      <ul class="list-disc list-inside space-y-2">
+                        {product.features.estructura && (
+                          <li>Estructura: {product.features.estructura}</li>
+                        )}
+                        {product.features.asientos && (
+                          <li>Asientos: {product.features.asientos}</li>
+                        )}
+                        {product.features.respaldo && (
+                          <li>Respaldos: {product.features.respaldo}</li>
+                        )}
+                        {product.features.brazos && (
+                          <li>Brazos: {product.features.brazos}</li>
+                        )}
+                        {product.features.patas && (
+                          <li>Patas: {product.features.patas}</li>
+                        )}
+                      </ul>
+                    </div>  
+                  </div>
+                )}
+              </>
             )}
           </div>
         </div>

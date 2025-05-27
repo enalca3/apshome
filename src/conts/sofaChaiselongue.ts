@@ -20,12 +20,16 @@ export const SOFA_CHAISELONGUE: Product[] = [
         ],
         category: "Sofá chaiselongue",
         specifications: {
-            material: "Tela",
-            color: "Gris",
-            dimensions: "330 x 150 x 90 cm",
-            weight: 80,
-            warranty: "2 años",
-            assemblyRequired: true,
+            composicion: "100% poliéster.",
+            resistencia_abrasion: "25.000 ciclos.",
+            resistencia_piling: "4-5."
+        },
+        features: {
+            estructura: "Madera de pino.",
+            asientos: "Espuma de poliuretano de alta densidad.",
+            respaldo: "Almohadas de fibra hueca siliconada.",
+            patas: "Madera color wengué.",
+            brazos: "Desenfundables en fibra hueca 100%.",
         }
     },
     {
@@ -46,12 +50,16 @@ export const SOFA_CHAISELONGUE: Product[] = [
         ],
         category: "Sofá chaiselongue",
         specifications: {
-            material: "Tela",
-            color: "Beige",
-            dimensions: "295 x 150 x 90 cm",
-            weight: 80,
-            warranty: "2 años",
-            assemblyRequired: true,
+            composicion: "100% poliéster.",
+            resistencia_abrasion: "25.000 ciclos.",
+            resistencia_piling: "4-5."
+        },
+        features: {
+            estructura: "Madera de pino.",
+            asientos: "Espuma de poliuretano de alta densidad.",
+            respaldo: "Almohadas de fibra hueca siliconada.",
+            patas: "Madera color wengué.",
+            brazos: "Desenfundables en fibra hueca 100%.",
         }
     },
     {
@@ -72,13 +80,17 @@ export const SOFA_CHAISELONGUE: Product[] = [
         ],
         category: "Sofá chaiselongue",
         specifications: {
-            material: "Viscoelástico",
-            firmness: "Media",
-            dimensions: "150 x 190 x 25 cm",
-            weight: 25,
-            warranty: "10 años",
-            assemblyRequired: false,
+            composicion: "100% poliéster.",
+            resistencia_abrasion: "25.000 ciclos.",
+            resistencia_piling: "4-5."
         },
+        features: {
+            estructura: "Madera de pino.",
+            asientos: "Espuma de poliuretano de alta densidad.",
+            respaldo: "Almohadas de fibra hueca siliconada.",
+            patas: "Madera color wengué.",
+            brazos: "Desenfundables en fibra hueca 100%.",
+        }
     },
     {
         id: "sofa-chaiselongue-tecno",
@@ -99,12 +111,16 @@ export const SOFA_CHAISELONGUE: Product[] = [
         ],
         category: "Sofá chaiselongue",
         specifications: {
-            material: "Tela",
-            color: "Gris",
-            dimensions: "275 x 150 x 90 cm",
-            weight: 80,
-            warranty: "2 años",
-            assemblyRequired: true,
+            composicion: "100% poliéster.",
+            resistencia_abrasion: "50.000 ciclos.",
+            resistencia_piling: "4-5."
+        },
+        features: {
+            estructura: "Madera de pino de alta calidad.",
+            asientos: "Espuma de poliuretano de 28 kg. Recubierta de poliéster. Desenfundables para facilitar el lavado. Deslizantes por puntos con muelles zig-zag.",
+            respaldo: "Almohadas de fibra hueca siliconada. 100% desenfundables para facilitar el lavado. Reclinable.",
+            patas: "Metálicas negras. Altura 12 cm.",
+            brazos: "Desenfundables en fibra hueca 100%.",
         }
     },
     {
@@ -125,12 +141,16 @@ export const SOFA_CHAISELONGUE: Product[] = [
         ],
         category: "Sofá chaiselongue",
         specifications: {
-            material: "Tela",
-            color: "Azul",
-            dimensions: "295 x 150 x 90 cm",
-            weight: 80,
-            warranty: "2 años",
-            assemblyRequired: true,
+            composicion: "100% poliéster.",
+            resistencia_abrasion: "25.000 ciclos.",
+            resistencia_piling: "4-5."
+        },
+        features: {
+            estructura: "Madera de pino.",
+            asientos: "Espuma de poliuretano de alta densidad.",
+            respaldo: "Almohadas de fibra hueca siliconada.",
+            patas: "Madera color wengué.",
+            brazos: "Desenfundables en fibra hueca 100%.",
         }
     },
     {
@@ -151,12 +171,16 @@ export const SOFA_CHAISELONGUE: Product[] = [
         ],
         category: "Sofá chaiselongue",
         specifications: {
-            material: "Tela",
-            color: "Beige",
-            dimensions: "295 x 150 x 90 cm",
-            weight: 80,
-            warranty: "2 años",
-            assemblyRequired: true,
+            composicion: "100% poliéster.",
+            resistencia_abrasion: "30.000 ciclos.",
+            resistencia_piling: "4-5."
+        },
+        features: {
+            estructura: "Madera de pino de alta calidad.",
+            asientos: "Espuma de poliuretano de 28 kg. Recubierta de goma súper suave. Desenfundables para facilitar su limpieza. Mecanismo deslizante punto a punto. Cincha elástica sobre bastidor metálico.",
+            respaldo: "Fibra hueca siliconada. 100% desenfundables para facilitar su limpieza. Reclinable con mecanismo punto a punto.",
+            patas: "Metal cromado de 6 cm de alto.",
+            brazos: "Desenfundables en fibra hueca 100%. Brazo 25 cm en módulos y chaiselongue.",
         }
     }
 

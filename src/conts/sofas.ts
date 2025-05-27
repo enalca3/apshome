@@ -20,12 +20,16 @@ export const SOFAS: Product[] = [
         ],
         category: "Sofás",
         specifications: {
-            material: "Cuero sintético",
-            color: "Negro",
-            weight: 50,
-            dimensions: "270 x 90 x 85 cm",
-            warranty: "2 años",
-            assemblyRequired: true,
+            composicion: "100% poliéster.",
+            resistencia_abrasion: "25.000 ciclos.",
+            resistencia_piling: "4-5."
+        },
+        features: {
+            estructura: "Madera de pino de alta calidad",
+            asientos: "Espuma de poliuretano de 32 kg. Recubierta de poliéster. Desenfundables para facilitar su limpieza. Mecanismo deslizante de gran apertura a linea del chaiselongue.",
+            respaldo: "Espuma de poliuretano de 25 kg. Súper suave. Reclinable por puntos con mecanismo italiano cromado. Riñoneras en fibra hueca siliconada. 100% desenfundables para facilitar su limpieza.",
+            patas: "Madera de color wengué.",
+            brazos: "Desenfundables en fibra hueca 100%. Brazos arcón de 30 cm con reclinable punto a punto.",
         }
     },
     {
@@ -47,12 +51,16 @@ export const SOFAS: Product[] = [
         ],
         category: "Sofás",
         specifications: {
-            material: "Tela",
-            color: "Orquidea",
-            dimensions: "185 x 95 x 105 cm",
-            weight: 30,
-            warranty: "1 año",
-            assemblyRequired: false,
+            composicion: "100% poliéster.",
+            resistencia_abrasion: "20.000 ciclos.",
+            resistencia_piling: "4-5."
         },
+        features: {
+            estructura: "Mecanismo cama de fácil apertura tipo italiano, con malla electrosoldada y cincha tipo nea en la sentada. Resto de estructura en madera de pino.",
+            asientos: "Espuma de poliuretano de 30 kg. Recubierta de poliéster. Desenfundables para facilitar su limpieza.",
+            respaldo: "Fibra hueca siliconada. 100% desenfundables para facilitar su limpieza.",
+            patas: "Madera color wengué.",
+            brazos: "Desenfundables en fibra hueca 100%.",
+        }
     }
 ] as const;

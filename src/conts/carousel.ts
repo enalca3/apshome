@@ -39,6 +39,7 @@ export const CAROUSEL_ITEMS:CarouselItem[] = [
         imageUrl: "images/carousel/berlin.webp",
         title: "Berlin",
         price: 1751.93,
+        salePrice: 1610,
         link: "/products/sofa-chaiselongue-berlin"
     }
 ]    
