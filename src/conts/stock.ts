@@ -12,6 +12,11 @@ export const STOCK: Product[] = [
             "/images/products/beni_2.png",
             "/images/products/beni_3.png"
         ],
+        colors: [
+            "/images/products/colors/tecno_1.png",
+            "/images/products/colors/tecno_2.png",
+            "/images/products/colors/tecno_3.png"
+        ],
         category: "Sillón relax",
         specifications: {
             material: "Tela",
@@ -34,6 +39,11 @@ export const STOCK: Product[] = [
             "/images/products/night_3.png",
             "/images/products/night_4.png"
         ],
+        colors: [
+            "/images/products/colors/night_1.png",
+            "/images/products/colors/night_2.png",
+            "/images/products/colors/night_3.png"
+        ],
         category: "Sofás",
         specifications: {
             material: "Tela",
@@ -51,6 +61,11 @@ export const STOCK: Product[] = [
         price: 702.19,
         mainImage: "/images/products/heart.png",
         images: [],
+        colors: [
+            "/images/products/colors/heart_1.png",
+            "/images/products/colors/heart_2.png",
+            "/images/products/colors/heart_3.png"
+        ],
         category: "Sillón relax",
         specifications: {
             material: "Tela",
@@ -72,6 +87,11 @@ export const STOCK: Product[] = [
             "/images/products/luz_2.png",
             "/images/products/luz_3.png",
             "/images/products/luz_4.png"
+        ],
+        colors: [
+            "/images/products/colors/luz_1.png",
+            "/images/products/colors/luz_2.png",
+            "/images/products/colors/luz_3.png"
         ],
         category: "Sofás",
         specifications: {
@@ -95,6 +115,11 @@ export const STOCK: Product[] = [
             "/images/products/ruth_3.png",
             "/images/products/ruth_4.png"
         ],
+        colors: [
+            "/images/products/colors/ruth_1.png",
+            "/images/products/colors/ruth_2.png",
+            "/images/products/colors/ruth_3.png"
+        ],
         category: "Sofás",
         specifications: {
             material: "Tela",
@@ -116,6 +141,10 @@ export const STOCK: Product[] = [
             "/images/products/hot_2.png",
             "/images/products/hot_3.png",
             "/images/products/hot_4.png"
+        ],
+        colors: [
+            "/images/products/colors/hot_1.png",
+            "/images/products/colors/hot_2.png"
         ],
         category: "Sillón relax",
         specifications: {
