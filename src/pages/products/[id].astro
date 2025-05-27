@@ -60,7 +60,11 @@ function isStock(product: { id: string; }) {
             </dl>
             {product.colors && product.colors.length > 0 && (
               <div class="border-t mt-10 pt-10 border-gray-200">
-                <h3 class="text-xl lg:text-3xl font-semibold text-black">COLORES</h3>
+                <div class="md:flex space-x-4 items-center">
+                  <h3 class="text-xl lg:text-3xl font-semibold text-black">COLORES</h3>
+                  <p class="text-gray-600">Mas colores disponibles en la tienda.</p>
+                </div>
+                
                 <div class="flex items-center space-x-4 mt-4 md:mr-6">
                   {product.colors && product.colors.map((color) => (
                     <img src={color} alt={product.name} class="object-cover aspect-square rounded-full w-[50px] border-6 border-gray-200 hover:scale-150 duration-300" loading="lazy" />
