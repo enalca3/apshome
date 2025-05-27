@@ -10,6 +10,7 @@ import {
 import { Menu } from "lucide-react"
 
 import type { MenuSection } from '@/types/menu';
+import React from "react";
 
 interface Props {
     menuItems: MenuSection[][];
@@ -34,23 +35,26 @@ export default function AppMenuBar({ menuItems }: Props) {
         <Menubar>
             <MenubarMenu>
                 <MenubarTrigger>
-                    <Menu className="mr-2 h-4 w-4" />
+                <Menu className="mr-2 h-4 w-4" />
                 </MenubarTrigger>
                 <MenubarContent forceMount>
-                    {menuItems.map((section) => (
-                        <MenubarItem 
-                            key={section[0].title} 
-                            onClick={() => section[0].href 
-                                ? window.location.href = section[0].href! 
-                                : scrollToSection(section[0].title)
-                            }
-                        >
-                            {section[0].title}
-                            <MenubarSeparator />
-                        </MenubarItem>                        
-                    ))}
+                {menuItems.map((section, index) => (
+                    <React.Fragment key={section[0].title}>
+                    <MenubarItem
+                        onClick={() =>
+                        section[0].href
+                            ? (window.location.href = section[0].href!)
+                            : scrollToSection(section[0].title)
+                        }
+                    >
+                        {section[0].title}
+                    </MenubarItem>
+                    {index !== menuItems.length - 1 && <MenubarSeparator />}
+                    </React.Fragment>
+                ))}
                 </MenubarContent>
             </MenubarMenu>
         </Menubar>
+
     )
 }
