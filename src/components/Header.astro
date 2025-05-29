@@ -1,2 +1,61 @@
-<header class="fixed top-0 z-60 w-screen">
+---
+import AppNavigationMenu from "@/components/react/AppNavigationMenu";
+import AppMenuBar from "@/components/react/AppMenuBar";
+import { 
+    menuSofaChaiselongue, 
+    menuSofa, 
+    menuSillonRelax,
+    menuStock,
+    menuContacto } from "@/conts/menu.ts";
+
+const allMenuItems = [
+    menuSofaChaiselongue,
+    menuSofa, 
+    menuSillonRelax,
+    menuStock,
+    menuContacto
+];
+---
+
+<header class="sticky top-0 z-50 bg-white/20 backdrop-blur-md border-b border-white/30">
+    <nav class="flex items-center justify-between bg-white/20 backdrop-blur-md p-4 shadow-md relative">
+        
+        <div class="md:hidden flex items-center">
+            <AppMenuBar client:load menuItems={allMenuItems}>
+            </AppMenuBar>
+        </div>
+        
+        <div class="flex space-x-4 absolute ml-15 md:ml-6 md:mt-16">
+            <a href="/" class="flex items-center w-1/8">
+                <img src="/images/logo.webp" alt="Home" class="aspect-square rounded-full object-cover" />
+            </a>
+        </div>
+        <div class="flex items-center">
+
+        </div>        
+
+        <div class="hidden md:flex items-center gap-4">
+            <AppNavigationMenu client:idle menuItems={menuSofaChaiselongue}>
+            </AppNavigationMenu> 
+            <AppNavigationMenu client:idle menuItems={menuSofa}>
+            </AppNavigationMenu>
+            <AppNavigationMenu client:idle menuItems={menuSillonRelax}>
+            </AppNavigationMenu>
+            <AppNavigationMenu client:idle menuItems={menuStock}>
+            </AppNavigationMenu>
+            <AppNavigationMenu client:idle menuItems={menuContacto}>
+            </AppNavigationMenu>
+        </div>
+        <div class="flex items-center space-x-4 md:mr-6 z-10">
+            <a href="https://www.instagram.com/apshome.desing" target="_blank" rel="noopener noreferrer">
+                <img src="/images/social/instagram.png" alt="Instagram" class="w-8 h-8" />
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61574982483389" target="_blank" rel="noopener noreferrer">
+                <img src="/images/social/facebook.svg" alt="Facebook" class="w-8 h-8" />
+            </a>
+            <a href="https://www.tiktok.com/@apshome.desing?_t=ZN-8vcCiJKwvXa&_r=1" target="_blank" rel="noopener noreferrer">
+                <img src="/images/social/tiktok.svg" alt="Tiktok" class="w-8 h-8" />
+            </a>
+        </div>
+    </nav>
 </header>

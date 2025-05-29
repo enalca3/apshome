@@ -1,0 +1,142 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { SOFA_CHAISELONGUE } from "@/conts/sofaChaiselongue";
+import { SOFAS } from "@/conts/sofas";
+import { SILLON_RELAX } from "@/conts/sillonRelax";
+import { STOCK } from "@/conts/stock";
+import { formatPrice } from "@/lib/utils";
+
+export async function getStaticPaths() {
+
+  // Combine all products into a single array
+  let PRODUCTS = [...SOFA_CHAISELONGUE, ...SOFAS, ...SILLON_RELAX, ...STOCK];
+
+  return PRODUCTS.map(product => (
+  {
+    params: { id: product.id },
+    props: { product }
+  }));
+}
+const { product } = Astro.props;
+
+function isStock(product: { id: string; }) {
+  return product.id.startsWith('stock-');
+};
+
+
+
+---
+<Layout> 
+  <section>
+    <div class="items-center px-8 pt-4 mx-auto max-w-7xl md:px-12 lg:pb-24 md:pt-16">
+      <h1 class="text-3xl md:text-5xl lg:text-7xl text-balance text-black font-display uppercase">
+        {product.name}
+      </h1>
+      {isStock(product) && (
+        <h3 class="text-xl md:text-2xl lg:text-3xl text-balance text-gray-600 font-display uppercase mt-4">
+          DE FÁBRICA DIRECTO A TU CASA
+        </h3>
+      )}
+      <div class="mx-auto mt-4 md:mt-12">
+        <div class="lg:gap-x-8 lg:gap-y-10 lg:grid lg:grid-cols-7 lg:grid-rows-1 xl:gap-x-16">
+          <div class="lg:col-span-4 lg:row-end-1 space-y-3">
+            <div class="aspect-4/3">
+              <img id="mainImage" src={product.mainImage} alt={product.name} class="rounded-xl" loading="lazy" />  
+            </div>
+            <div class="flex items-center space-x-1 md:mr-6">
+              {product.images.map((image) => (
+                <img src={image} alt={product.name} class="thumbnail object-center object-cover rounded-xl w-1/4 cursor-pointer hover:opacity-75 transition-opacity" loading="lazy" />
+              ))}
+            </div>
+          </div>
+          <div class="mx-auto lg:col-span-3 lg:max-w-none lg:mt-0 lg:row-end-2 lg:row-span-2 max-w-2xl mt-14 sm:mt-16">
+            <p class="text-gray-600">
+              {product.description}
+            </p>
+            <dl class="flex flex-col gap-2 mt-8">
+              <div class="border border-gray-200 p-6 rounded-lg hover:shadow-2xl duration-200 bg-gray-50">
+                <h2 class="text-3xl lg:text-5xl text-balance text-black text-center transform transition-transform hover:scale-110 duration-300">{formatPrice(product.price)}</h2>
+              </div>
+            </dl>
+            {product.colors && product.colors.length > 0 && (
+              <div class="border-t mt-10 pt-10 border-gray-200">
+                <div class="md:flex space-x-4 items-center">
+                  <h3 class="text-xl lg:text-3xl font-semibold text-black">COLORES</h3>
+                  <p class="text-gray-600">Mas colores disponibles en la tienda.</p>
+                </div>
+                
+                <div class="flex items-center space-x-4 mt-4 md:mr-6">
+                  {product.colors && product.colors.map((color) => (
+                    <img src={color} alt={product.name} class="object-cover aspect-square rounded-full w-[50px] border-6 border-gray-200 hover:scale-150 duration-300" loading="lazy" />
+                  ))}
+                </div>
+              </div>
+            )}
+            {!isStock(product) && (
+              <>
+                {product.specifications && (
+                  <div class="border-t mt-10 pt-10 border-gray-200">
+                    <h3 class="text-base font-semibold text-black">ESPECIFICACIONES TÉCNICAS</h3>
+                    <div class="text-gray-600 mt-4 prose prose-sm">
+                      <ul class="list-disc list-inside space-y-2">
+                        {product.specifications.composicion && (
+                          <li>Composición: {product.specifications.composicion}</li>
+                        )}
+                        {product.specifications.resistencia_abrasion && (
+                          <li>Resistencia a la abrasión: {product.specifications.resistencia_abrasion}</li>
+                        )}
+                        {product.specifications.resistencia_piling && (
+                          <li>Resistencia al pilling: {product.specifications.resistencia_piling}</li>
+                        )}
+                      </ul>
+                    </div>  
+                  </div>
+                )}
+                {product.features && (  
+                  <div class="border-t mt-10 pt-10 border-gray-200">
+                    <h3 class="text-base font-semibold text-black">CARACTERÍSTICAS</h3>
+                    <div class="text-gray-600 mt-4 prose prose-sm">
+                      <ul class="list-disc list-inside space-y-2">
+                        {product.features.estructura && (
+                          <li>Estructura: {product.features.estructura}</li>
+                        )}
+                        {product.features.asientos && (
+                          <li>Asientos: {product.features.asientos}</li>
+                        )}
+                        {product.features.respaldo && (
+                          <li>Respaldos: {product.features.respaldo}</li>
+                        )}
+                        {product.features.brazos && (
+                          <li>Brazos: {product.features.brazos}</li>
+                        )}
+                        {product.features.patas && (
+                          <li>Patas: {product.features.patas}</li>
+                        )}
+                      </ul>
+                    </div>  
+                  </div>
+                )}
+              </>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+</Layout>
+
+<script>
+  const mainImage = document.getElementById('mainImage') as HTMLImageElement | null;
+  const thumbnails = document.querySelectorAll('.thumbnail');
+
+  if (mainImage) {
+    thumbnails.forEach(thumb => {
+      thumb.addEventListener('click', () => {
+        // Set main image src to thumbnail src
+        mainImage.src = (thumb as HTMLImageElement).src;
+      });
+    });
+  }
+</script>

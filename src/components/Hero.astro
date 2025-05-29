@@ -1,22 +1,8 @@
-<section class="relative mx-4">
-    <div class="relative mx-auto mb-10 sm:mb-0 aspect-video max-w-6xl flex flex-col items-center justify-center  text-center">
-        <img class=" rounded-[3rem] w-100 mb-10" src="/images/logo.webp" alt="Hero image" />
-        <img aria-hidden="true" class="rounded-[3rem] w-100 absolute inset-0 m-auto blur-2xl -z-10" src="/images/logo.webp" alt="Hero image" />
-        <h1 class="text-3xl">Pronto estará disponible la web de APShome.</h1>
-    </div>
-    <div class="flex flex-col items-center justify-center mb-16">
-        <p class="text-lg text-gray-700">¡Estamos trabajando para ofrecerte la mejor experiencia!</p>
-        <p class="text-lg text-gray-700">Mientras tanto, puedes seguirnos en nuestras redes sociales.</p>
-        <div class="flex gap-4 mt-4">
-            <a href="https://www.instagram.com/apshome.desing" target="_blank" rel="noopener noreferrer">
-                <img src="/images/instagram.svg" alt="Instagram" class="w-8 h-8" />
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=61574982483389" target="_blank" rel="noopener noreferrer">
-                <img src="/images/facebook.svg" alt="Facebook" class="w-8 h-8" />
-            </a>
-            <a href="https://www.tiktok.com/@apshome.desing?_t=ZN-8vcCiJKwvXa&_r=1" target="_blank" rel="noopener noreferrer">
-                <img src="/images/tiktok.svg" alt="Tiktok" class="w-8 h-8" />
-            </a>
-        </div>
-    </div>
+---
+import Carrusel from "@/components/react/Carrusel"
+---
+
+<section class="px-8 pb-12 mx-auto max-w-7xl md:px-12 pt-16">
+    <Carrusel client:load>
+    </Carrusel>
 </section>

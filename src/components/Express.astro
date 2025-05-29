@@ -1,0 +1,76 @@
+---
+import PreviewProduct from "./PreviewProduct.astro"
+import { SOFA_CHAISELONGUE } from "@/conts/sofaChaiselongue";
+import { SOFAS } from "@/conts/sofas";
+import { SILLON_RELAX } from "@/conts/sillonRelax";
+import { STOCK } from "@/conts/stock";
+
+---
+
+<section class="px-8 py-12 mx-auto max-w-7xl md:px-12" data-section="SOFÁ CHAISELONGUE">
+
+    <div class="border-b border-gray-200 pb-5">
+        <h2 class="text-3xl font-semibold text-black">
+            SOFÁ CHAISELONGUE
+        </h2>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 mt-12 gap-2 gap-y-12 lg:gap-y-24">
+        <!-- Iterar todos los productos y mostrarlos -->
+        {SOFA_CHAISELONGUE.map((product) => (
+            <PreviewProduct product={product}></PreviewProduct>
+        ))}
+    </div>
+
+</section>
+
+<section class="px-8 py-12 mx-auto max-w-7xl md:px-12" data-section="SOFÁS">
+
+    <div class="border-b border-gray-200 pb-5">
+        <h2 class="text-3xl font-semibold text-black">
+            SOFÁS
+        </h2>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 mt-12 gap-2 gap-y-12 lg:gap-y-24">
+        <!-- Iterar todos los productos y mostrarlos -->
+        {SOFAS.map((product) => (
+            <PreviewProduct product={product}></PreviewProduct>
+        ))}  
+    </div>
+
+</section>
+
+<section class="px-8 py-12 mx-auto max-w-7xl md:px-12" data-section="SILLÓN RELAX">
+
+    <div class="border-b border-gray-200 pb-5">
+        <h2 class="text-3xl font-semibold text-black">
+            SILLÓN RELAX
+        </h2>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 mt-12 gap-2 gap-y-12 lg:gap-y-24">
+        <!-- Iterar todos los productos y mostrarlos -->
+        {SILLON_RELAX.map((product) => (
+            <PreviewProduct product={product}></PreviewProduct>
+        ))}  
+    </div>
+
+</section>
+
+<section class="px-8 py-12 mx-auto max-w-7xl md:px-12" data-section="STOCK">
+
+    <div class="border-b border-gray-200 pb-5">
+        <h2 class="text-3xl font-semibold text-black">
+            STOCK
+        </h2>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 mt-12 gap-2 gap-y-12 lg:gap-y-24">
+        <!-- Iterar todos los productos y mostrarlos -->
+        {STOCK.map((product) => (
+            <PreviewProduct product={product}></PreviewProduct>
+        ))}   
+    </div>
+    
+</section>

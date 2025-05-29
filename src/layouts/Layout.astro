@@ -9,26 +9,24 @@ import Header from '../components/Header.astro';
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<title>APShome - En construcción</title>
+		<title>APShome - tu tienda de sofás.</title>
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="sitemap" href="/sitemap-index.xml" />
-			
+		<link rel="sitemap" href="/sitemap-index.xml" />			
 
-		<meta name="description" content="Pronto estará disponible la web de APShome." />
-
-		<meta property="og:tittle" content="APShome - En construcción" />
-		<meta property="og:description" content="Pronto estará disponible la web de APShome." />
+		<meta name="description" content="APShome tu tienda de sofas en Sueca" />
+		<meta property="og:tittle" content="APShome - Tu tienda de sofás." />
+		<meta property="og:description" content="APShome tu tienda de sofás, sillones, sofás cama, butacones, etc en Sueca" />
 		<meta property="og:image" content="/favicon.svg" />
 		
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:site" content="@apshome" />
 		<meta name="twitter:creator" content="@apshome" />
-		<meta name="twitter:tittle" content="APShome - En construcción" />
-		<meta name="twitter:description" content="Pronto estará disponible la web de APShome." />
+		<meta name="twitter:tittle" content="APShome - Tu tienda de sofás." />
+		<meta name="twitter:description" content="APShome tu tienda de sofás, sillones, sofás cama, butacones, etc en Sueca" />
 		
 	</head>
-	<body>
+	<body class="bg-white flex flex-col min-h-svh">
 		<Header></Header>
 		<slot></slot>
 		<Footer></Footer>
@@ -36,19 +34,5 @@ import Header from '../components/Header.astro';
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
 
-	// Temporal styles
-	body {
-		display: grid;
-		place-content: center;
-		min-height: 100vh;
-		background: #e4dde0;
-		padding: 8px;
-	}
 </style>
