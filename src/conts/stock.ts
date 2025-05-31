@@ -44,7 +44,7 @@ export const STOCK: Product[] = [
         specifications: {
             composicion: "100% poliéster.",
             resistencia_abrasion: "20.000 ciclos.",
-            resistencia_piling: "4-5."
+            resistencia_pilling: "4-5."
         },
         features: {
             estructura: "Mecanismo cama de fácil apertura tipo italiano, con malla electrosoldada y cincha tipo nea en la sentada. Resto de estructura en madera de pino.",
@@ -70,7 +70,7 @@ export const STOCK: Product[] = [
         specifications: {
             composicion: "100% poliéster.",
             resistencia_abrasion: "25.000 ciclos.",
-            resistencia_piling: "4-5."
+            resistencia_pilling: "4-5."
         },
         features: {
             estructura: "Madera de pino.",
@@ -83,7 +83,7 @@ export const STOCK: Product[] = [
     {
         id: "stock-sofas-luz",
         name: "Luz",
-        description: "Sofá 3 plazas fijo. Medida total 185 cms.",
+        description: "Sofá 3 plazas fijo. Medida total 185 cm.",
         price: 526.15,
         mainImage: "/images/products/luz.png",
         images: [
@@ -101,7 +101,7 @@ export const STOCK: Product[] = [
         specifications: {
             composicion: "100% poliéster.",
             resistencia_abrasion: "25.000 ciclos.",
-            resistencia_piling: "4."
+            resistencia_pilling: "4."
         },
         features: {
             estructura: "Madera de pino y tablero aglomerado. Cinchas elásticas.",
@@ -114,7 +114,7 @@ export const STOCK: Product[] = [
     {
         id: "stock-sofas-ruth",
         name: "Ruth",
-        description: "Sofá 3 plazas fijo. Medida total 197 cms.",
+        description: "Sofá 3 plazas fijo. Medida total 197 cm.",
         price: 595.74,
         mainImage: "/images/products/ruth.png",
         images: [
@@ -132,7 +132,7 @@ export const STOCK: Product[] = [
         specifications: {
             composicion: "100% poliéster.",
             resistencia_abrasion: "25.000 ciclos.",
-            resistencia_piling: "4-5."
+            resistencia_pilling: "4-5."
         },
         features: {
             estructura: "Madera de pino de alta calidad",
