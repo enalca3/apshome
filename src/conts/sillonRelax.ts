@@ -4,7 +4,7 @@ export const SILLON_RELAX: Product[] = [
     {
         id: "sillon-relax-oregon",
         name: "Oregón",
-        description: "Sillón relax elevador 1 motor.",
+        description: "Sillón relax elevador de 1 motor.",
         price: 564.27,
         mainImage: "/images/products/oregon.png",
         images: [

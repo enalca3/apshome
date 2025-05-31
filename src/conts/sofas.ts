@@ -26,7 +26,7 @@ export const SOFAS: Product[] = [
         },
         features: {
             estructura: "Madera de pino de alta calidad",
-            asientos: "Espuma de poliuretano de 32 kg. Recubierta de poliéster. Desenfundables para facilitar su limpieza. Mecanismo deslizante de gran apertura a linea del chaiselongue.",
+            asientos: "Espuma de poliuretano de 32 kg. Recubierta de poliéster. Desenfundables para facilitar su limpieza. Mecanismo deslizante de gran apertura a línea del chaiselongue.",
             respaldo: "Espuma de poliuretano de 25 kg. Súper suave. Reclinable por puntos con mecanismo italiano cromado. Riñoneras en fibra hueca siliconada. 100% desenfundables para facilitar su limpieza.",
             patas: "Madera de color wengué.",
             brazos: "Desenfundables en fibra hueca 100%. Brazos arcón de 30 cm con reclinable punto a punto.",
@@ -35,7 +35,7 @@ export const SOFAS: Product[] = [
     {
         id: "sofa-bella",
         name: "Bella",
-        description: "Sofá cama con apertura italiana, colchón 140 x 190 cms. 14 cms de alto con viscoelástica.",
+        description: "Sofá cama con apertura italiana, colchón 140 x 190 cm. 14 cm de alto con viscoelástica.",
         price: 870,
         mainImage: "/images/products/bella.png",
         images: [
