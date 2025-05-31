@@ -39,7 +39,7 @@ export default function AppMenuBar({ menuItems }: Props) {
                 <MenubarTrigger>
                 <Menu className="mr-2 h-4 w-4" />
                 </MenubarTrigger>
-                <MenubarContent forceMount>
+                <MenubarContent forceMount className="position-absolute z-50">
                 {menuItems.map((section, index) => (
                     <React.Fragment key={section[0].title}>
                     <MenubarItem
