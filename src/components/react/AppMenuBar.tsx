@@ -15,10 +15,11 @@ import type { MenuSection } from '@/types/menu';
 import React from "react";
 
 interface Props {
+    className?: string;
     menuItems: MenuSection[][];
 }
 
-export default function AppMenuBar({ menuItems }: Props) {
+export default function AppMenuBar({ className, menuItems }: Props) {
 
     const scrollToSection = (sectionTitle: string) => {
         
@@ -34,7 +35,7 @@ export default function AppMenuBar({ menuItems }: Props) {
         }
     };
     return (
-        <Menubar>
+        <Menubar className={className}>
             <MenubarMenu>
                 <MenubarTrigger>
                 <Menu className="mr-2 h-4 w-4" />
