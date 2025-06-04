@@ -7,6 +7,7 @@ import {
     menuSillonRelax,
     menuStock,
     menuContacto } from "@/conts/menu.ts";
+import AppDrawer from "./react/AppDrawer";
 
 const allMenuItems = [
     menuSofaChaiselongue,
@@ -20,8 +21,8 @@ const allMenuItems = [
 <header class="sticky top-0 z-50 bg-white/20 backdrop-blur-md border-b border-white/30">
     <nav class="flex items-center justify-between bg-white/20 backdrop-blur-md p-4 shadow-md relative">
         
-        <AppMenuBar className="md:hidden flex items-center" client:load menuItems={allMenuItems}>
-        </AppMenuBar>
+        <AppDrawer className="md:hidden flex items-center" client:load menuItems={allMenuItems}>
+        </AppDrawer>
         
         <div class="flex space-x-4 absolute ml-15 md:ml-6 md:mt-16">
             <a href="/" class="flex items-center w-1/8">

@@ -9,7 +9,7 @@ module.exports = {
     },
   },
   plugins: [
-    // Plugins adicionales si los necesitas
+    require('tailwindcss-animate'),
   ],
   safelist: [
     'z-50',

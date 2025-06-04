@@ -38,7 +38,7 @@ export default function AppMenuBar({ className, menuItems }: Props) {
         <Menubar className={className}>
             <MenubarMenu>
                 <MenubarTrigger>
-                <Menu className="mr-2 h-4 w-4" />
+                    <Menu className="mr-2 h-4 w-4" />
                 </MenubarTrigger>
                 <MenubarContent forceMount className="position-absolute z-50">
                 {menuItems.map((section, index) => (
