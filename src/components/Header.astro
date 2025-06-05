@@ -16,13 +16,23 @@ const allMenuItems = [
     menuStock,
     menuContacto
 ];
+
+// Detectar si el dispositivo es un iPhone
+const isIphone = typeof window !== "undefined" && /iPhone/i.test(navigator.userAgent);
 ---
 
 <header class="sticky top-0 z-50 bg-white/20 backdrop-blur-md border-b border-white/30">
     <nav class="flex items-center justify-between bg-white/20 backdrop-blur-md p-4 shadow-md relative">
+
+        {!isIphone && (
+            <AppMenuBar className="md:hidden md:flex items-center" client:load menuItems={allMenuItems}>
+            </AppMenuBar>
+        )}        
         
-        <AppDrawer className="md:hidden flex items-center" client:load menuItems={allMenuItems}>
-        </AppDrawer>
+        {isIphone && (
+            <AppDrawer className="md:hidden flex items-center" client:load menuItems={allMenuItems}>
+            </AppDrawer>
+        )}
         
         <div class="flex space-x-4 absolute ml-15 md:ml-6 md:mt-16">
             <a href="/" class="flex items-center w-1/8">
@@ -30,7 +40,7 @@ const allMenuItems = [
             </a>
         </div>
         <div class="flex items-center">
-
+            
         </div>        
 
         <div class="hidden md:flex items-center gap-4">

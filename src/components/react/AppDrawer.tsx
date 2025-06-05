@@ -23,43 +23,55 @@ interface Props {
 export default function AppDrawer({ className, menuItems }: Props) {
 
     const scrollToSection = (sectionTitle: string) => {
-        
-        const element = document.querySelector(`[data-section="${sectionTitle}"]`);
-        if (element) {
-            const elementPosition = element.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.scrollY - 50;
+             
+        const closeButton = document.querySelector('[data-slot="drawer-close"]');
+        if (closeButton) {
+            (closeButton as HTMLElement).click();
+            // esperar a que se cierre el drawer
+            setTimeout(() => { 
+                // scroll to section after drawer is closed
+                const element = document.querySelector(`[data-section="${sectionTitle}"]`);
+                if (element) {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.scrollY - 50;
 
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            }, 300); // Adjust the timeout as needed
+            return;
         }
+
     };
 
     return (
-    <Drawer direction="left">
-      <DrawerTrigger asChild>
+    <Drawer direction="left" >
+      <DrawerTrigger asChild className={className}>
         <Button variant="outline" className="flex items-center gap-2">
           <Menu className="w-4 h-4" />
         </Button>
       </DrawerTrigger>
       <DrawerContent className="top-0 left-0 h-full w-64 max-w-[80%] p-4 border-r bg-background rounded-none">
-        <DrawerHeader className="flex flex-col justify-between items-end">
-          <DrawerClose asChild>
-            <Button variant="ghost" size="icon">
-              <X className="w-5 h-5" />
-            </Button>
-          </DrawerClose>
+        <DrawerHeader className="flex flex-row justify-between items-end">
           <DrawerTitle>
-            <a href="/" className="flex items-center w-1/8">
+            <a href="/" className="flex items-center w-1/3">
                 <img src="/images/logo.webp" alt="Home" className="aspect-square rounded-full object-cover" />
             </a>
           </DrawerTitle>
+          <DrawerClose asChild>
+            <Button variant="ghost" size="icon" className="absolute top-4 right-4">
+              <X className="w-5 h-5" />
+            </Button>
+          </DrawerClose>
+          
         </DrawerHeader>
         <div className="mt-4 space-y-2">
             {menuItems.map((item) => (
                 <React.Fragment key={item[0].title}>
-                <h3
+                <div
+                    className="text-lg font-medium hover:text-primary border-2 border-transparent hover:border-primary rounded-lg p-2 cursor-pointer transition-colors"
                     onClick={() =>
                         item[0].href
                             ? (window.location.href = item[0].href!)
@@ -67,7 +79,7 @@ export default function AppDrawer({ className, menuItems }: Props) {
                         }
                 >
                     {item[0].title}
-                </h3>                
+                </div>                
                 </React.Fragment>
             ))}
         </div>
