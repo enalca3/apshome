@@ -7,7 +7,8 @@ import {
     menuSillonRelax,
     menuStock,
     menuContacto } from "@/conts/menu.ts";
-import AppDrawer from "./react/AppDrawer";
+import { Menu } from "lucide-react";
+import { Button } from "./ui/button";
 
 const allMenuItems = [
     menuSofaChaiselongue,
@@ -25,13 +26,14 @@ const isIphone = typeof window !== "undefined" && /iPhone/i.test(navigator.userA
     <nav class="flex items-center justify-between bg-white/20 backdrop-blur-md p-4 shadow-md relative">
 
         {!isIphone && (
-            <AppMenuBar className="md:hidden md:flex items-center" client:load menuItems={allMenuItems}>
+            <AppMenuBar className="md:hidden flex items-center" client:load menuItems={allMenuItems}>
             </AppMenuBar>
         )}        
         
         {isIphone && (
-            <AppDrawer className="md:hidden flex items-center" client:load menuItems={allMenuItems}>
-            </AppDrawer>
+            <Button className="menuButton md:hidden ">
+                <Menu className="mr-2 h-4 w-4" />
+            </Button>
         )}
         
         <div class="flex space-x-4 absolute ml-15 md:ml-6 md:mt-16">

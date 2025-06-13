@@ -1,0 +1,94 @@
+---
+import { Button } from "./ui/button";
+
+import { 
+    menuSofaChaiselongue, 
+    menuSofa, 
+    menuSillonRelax,
+    menuStock,
+    menuContacto } from "@/conts/menu.ts";
+
+const allMenuItems = [
+    menuSofaChaiselongue,
+    menuSofa, 
+    menuSillonRelax,
+    menuStock,
+    menuContacto
+];
+---
+
+  <div class="menuContent hidden flex-row w-full h-screen p-4 bg-white rounded-none md:hidden fixed top-0 left-0 z-50">
+    
+    <div class="w-full max-w-xs mt-16">
+      {allMenuItems.map((menu) => (
+        <div class="flex flex-col gap-4 mb-6">
+          {menu.map((item) => (
+            <a class="menuItem text-lg p-2" title={item.title} href={item.href}>
+              {item.title}
+            </a>
+          ))}
+        </div>
+      ))}
+    </div>
+    <Button className="menuButtonClose">
+      ×
+    </Button>
+  </div>
+
+  <script>
+    const menuButton = document.querySelector('.menuButton');
+    if (menuButton) {
+      menuButton.addEventListener('click', () => {
+        const menuContent = document.querySelector('.menuContent');
+        if (menuContent) {
+          menuContent.classList.toggle('hidden');
+          menuContent.classList.toggle('flex');
+        }
+      });
+    }
+
+    const menuButtonClose = document.querySelector('.menuButtonClose');
+    if (menuButtonClose) {
+      menuButtonClose.addEventListener('click', () => {
+        const menuContent = document.querySelector('.menuContent');
+        if (menuContent) {
+          menuContent.classList.add('hidden');
+        }
+      });
+    }
+
+    const menuItem = document.querySelectorAll('.menuItem');
+    if (menuItem) {
+      menuItem.forEach((item) => {
+        item.addEventListener('click', () => {
+          const href = item.getAttribute("href");
+          const title = item.getAttribute("title")
+          
+          href ? (window.location.href = href) : scrollToSection(title ?? "")
+        });
+      });
+    }
+    
+    const scrollToSection = (sectionTitle: string) => {
+             
+        if (menuButtonClose) {
+            (menuButtonClose as HTMLElement).click();
+            // esperar a que se cierre el drawer
+            setTimeout(() => { 
+                // scroll to section after drawer is closed
+                const element = document.querySelector(`[data-section="${sectionTitle}"]`);
+                if (element) {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.scrollY - 50;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            }, 300); // Adjust the timeout as needed
+            return;
+        }
+
+    };
+  </script>
