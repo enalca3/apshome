@@ -41,8 +41,8 @@ const allMenuItems = [
       menuButton.addEventListener('click', () => {
         const menuContent = document.querySelector('.menuContent');
         if (menuContent) {
-          menuContent.classList.toggle('hidden');
-          menuContent.classList.toggle('flex');
+          menuContent.classList.remove('hidden');
+          menuContent.classList.add('flex');
         }
       });
     }
@@ -53,6 +53,7 @@ const allMenuItems = [
         const menuContent = document.querySelector('.menuContent');
         if (menuContent) {
           menuContent.classList.add('hidden');
+          menuContent.classList.remove('flex');
         }
       });
     }
