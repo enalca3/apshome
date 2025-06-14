@@ -18,8 +18,7 @@ const allMenuItems = [
     menuContacto
 ];
 
-const isIphone = /iPhone/i.test(navigator.userAgent);
-
+const isIphone = navigator && /iPhone/i.test(navigator.userAgent);
 ---
 
 <header class="sticky top-0 z-50 bg-white/20 backdrop-blur-md border-b border-white/30">
