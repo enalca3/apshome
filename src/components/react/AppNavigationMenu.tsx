@@ -14,17 +14,19 @@ interface Props {
 
 export default function AppNavigationMenu({ menuItems }: Props) {
 
-    const scrollToSection = (sectionTitle: string) => {
-        const element = document.querySelector(`[data-section="${sectionTitle}"]`);
-        if (element) {
-            const elementPosition = element.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.scrollY - 50;
+    const scrollToSection = (sectionId: string) => {
+        setTimeout(() => { 
+            const element = document.querySelector(`[id="${sectionId.replace('/#', '')}"]`);
+            if (element) {
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.scrollY - 50;
 
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
-        }
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }, 300);
     };
 
     return (
@@ -32,7 +34,11 @@ export default function AppNavigationMenu({ menuItems }: Props) {
             <NavigationMenuList>
                 {menuItems.map((section) => (
                     <NavigationMenuItem key={section.title}>
-                        <NavigationMenuTrigger onClick={() => scrollToSection(section.title)}>
+                        <NavigationMenuTrigger onClick={() => {                                
+                                window.location.href = section.href
+                                scrollToSection(section.href);
+                            }
+                        }>
                             {section.title}
                         </NavigationMenuTrigger>
                         <NavigationMenuContent>

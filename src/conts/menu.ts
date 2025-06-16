@@ -3,6 +3,7 @@ import type { MenuSection } from "@/types/menu";
 export const menuSofaChaiselongue: MenuSection[] = [
     {
         title: "SOFÁ CHAISELONGUE",
+        href: "/#SOFA-CHAISELONGUE",
         items: [
             { title: "Paris", href: "/products/sofa-chaiselongue-paris" },
             { title: "Toscama", href: "/products/sofa-chaiselongue-toscama" },
@@ -17,6 +18,7 @@ export const menuSofaChaiselongue: MenuSection[] = [
 export const menuSofa: MenuSection[] = [
     {
         title: "SOFÁS",
+        href: "/#SOFAS",
         items: [
             { title: "Ibiza", href: "/products/sofa-ibiza" },
             { title: "Bella", href: "/products/sofa-bella" }
@@ -27,6 +29,7 @@ export const menuSofa: MenuSection[] = [
 export const menuSillonRelax: MenuSection[] = [
     {
         title: "SILLÓN RELAX",
+        href: "/#SILLON-RELAX",
         items: [
             { title: "Oregón", href: "/products/sillon-relax-oregon" },
             { title: "París", href: "/products/sillon-relax-paris" }
@@ -37,6 +40,7 @@ export const menuSillonRelax: MenuSection[] = [
 export const menuDescanso: MenuSection[] = [
     {
         title: "DESCANSO",
+        href: "/#DESCANSO",
         items: [
             { title: "Pack colchón + canapé", href: "/products/descanso-pack-colchon-canape" }
         ]
@@ -46,6 +50,7 @@ export const menuDescanso: MenuSection[] = [
 export const menuStock: MenuSection[] = [
     {
         title: "STOCK",
+        href: "/#STOCK",
         items: [
             { title: "Beni", href: "/products/stock-sillon-relax-beni" },
             { title: "Night", href: "/products/stock-sofas-night" },

@@ -1,7 +1,9 @@
 ---
-import '../styles/global.css';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
+import '@/styles/global.css';
+import Footer from '@/components/Footer.astro';
+import Header from '@/components/Header.astro';
+import MenuMobile from '@/components/MenuMobile.astro';
+
 
 ---
 
@@ -28,6 +30,7 @@ import Header from '../components/Header.astro';
 	</head>
 	<body class="bg-white flex flex-col min-h-svh">
 		<Header></Header>
+		<MenuMobile></MenuMobile>
 		<slot></slot>
 		<Footer></Footer>
 	</body>

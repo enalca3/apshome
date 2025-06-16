@@ -1,27 +1,22 @@
 ---
 import AppNavigationMenu from "@/components/react/AppNavigationMenu";
-import AppMenuBar from "@/components/react/AppMenuBar";
 import { 
     menuSofaChaiselongue, 
     menuSofa, 
     menuSillonRelax,
     menuStock,
     menuContacto } from "@/conts/menu.ts";
+import { Menu } from "lucide-react";
+import { Button } from "./ui/button";
 
-const allMenuItems = [
-    menuSofaChaiselongue,
-    menuSofa, 
-    menuSillonRelax,
-    menuStock,
-    menuContacto
-];
 ---
 
 <header class="sticky top-0 z-50 bg-white/20 backdrop-blur-md border-b border-white/30">
     <nav class="flex items-center justify-between bg-white/20 backdrop-blur-md p-4 shadow-md relative">
-        
-        <AppMenuBar className="md:hidden flex items-center" client:load menuItems={allMenuItems}>
-        </AppMenuBar>
+
+        <Button id="menuButton" className="md:hidden ">
+            <Menu className="mr-2 h-4 w-4" />
+        </Button>
         
         <div class="flex space-x-4 absolute ml-15 md:ml-6 md:mt-16">
             <a href="/" class="flex items-center w-1/8">
@@ -29,7 +24,6 @@ const allMenuItems = [
             </a>
         </div>
         <div class="flex items-center">
-
         </div>        
 
         <div class="hidden md:flex items-center gap-4">
