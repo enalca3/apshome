@@ -22,8 +22,8 @@ interface Props {
 export default function AppMenuBar({ className, menuItems }: Props) {
 
     const scrollToSection = (sectionTitle: string) => {
-        
-        const element = document.querySelector(`[data-section="${sectionTitle}"]`);
+        debugger
+        const element = document.querySelector(`[id="${sectionTitle}"]`);
         if (element) {
             const elementPosition = element.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.scrollY - 50;
@@ -44,11 +44,13 @@ export default function AppMenuBar({ className, menuItems }: Props) {
                 {menuItems.map((section, index) => (
                     <React.Fragment key={section[0].title}>
                     <MenubarItem
-                        onClick={() =>
-                        section[0].href
-                            ? (window.location.href = section[0].href!)
-                            : scrollToSection(section[0].title)
+                        onClick={() => {
+                            section[0].href?.includes('#')
+                            ? scrollToSection(section[0].href!)
+                            : (window.location.href = section[0].href!)
                         }
+                        }
+                        
                     >
                         {section[0].title}
                     </MenubarItem>

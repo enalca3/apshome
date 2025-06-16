@@ -17,29 +17,29 @@ const allMenuItems = [
 ];
 ---
 
-  <div class="menuContent hidden flex-row w-full h-screen p-4 bg-white rounded-none md:hidden fixed top-0 left-0 z-50">
+  <div id="menuContent" class="hidden flex-row w-full h-screen p-4 bg-white rounded-none md:hidden fixed top-0 left-0 z-50">
     
     <div class="w-full max-w-xs mt-16">
       {allMenuItems.map((menu) => (
         <div class="flex flex-col gap-4 mb-6">
           {menu.map((item) => (
-            <a class="menuItem text-lg p-2" title={item.title} href={item.href}>
+            <a class="menuItem text-2xl font-semibold text-black p-2" title={item.title} href={item.href}>
               {item.title}
             </a>
           ))}
         </div>
       ))}
     </div>
-    <Button className="menuButtonClose">
+    <Button id="menuButtonClose" className="text-xl">
       ×
     </Button>
   </div>
 
   <script>
-    const menuButton = document.querySelector('.menuButton');
+    const menuButton = document.querySelector('#menuButton');
     if (menuButton) {
       menuButton.addEventListener('click', () => {
-        const menuContent = document.querySelector('.menuContent');
+        const menuContent = document.querySelector('#menuContent');
         if (menuContent) {
           menuContent.classList.remove('hidden');
           menuContent.classList.add('flex');
@@ -47,10 +47,10 @@ const allMenuItems = [
       });
     }
 
-    const menuButtonClose = document.querySelector('.menuButtonClose');
+    const menuButtonClose = document.querySelector('#menuButtonClose');
     if (menuButtonClose) {
       menuButtonClose.addEventListener('click', () => {
-        const menuContent = document.querySelector('.menuContent');
+        const menuContent = document.querySelector('#menuContent');
         if (menuContent) {
           menuContent.classList.add('hidden');
           menuContent.classList.remove('flex');
@@ -58,26 +58,26 @@ const allMenuItems = [
       });
     }
 
+  
     const menuItem = document.querySelectorAll('.menuItem');
     if (menuItem) {
       menuItem.forEach((item) => {
         item.addEventListener('click', () => {
           const href = item.getAttribute("href");
-          const title = item.getAttribute("title")
           
-          href ? (window.location.href = href) : scrollToSection(title ?? "")
+          scrollToSection(href ?? "")
         });
       });
     }
     
-    const scrollToSection = (sectionTitle: string) => {
+    const scrollToSection = (sectionId: string) => {
              
         if (menuButtonClose) {
             (menuButtonClose as HTMLElement).click();
             // esperar a que se cierre el drawer
             setTimeout(() => { 
                 // scroll to section after drawer is closed
-                const element = document.querySelector(`[data-section="${sectionTitle}"]`);
+                const element = document.querySelector(`[id="${sectionId.replace('/#', '')}"]`);
                 if (element) {
                     const elementPosition = element.getBoundingClientRect().top;
                     const offsetPosition = elementPosition + window.scrollY - 50;
@@ -87,9 +87,10 @@ const allMenuItems = [
                         behavior: 'smooth'
                     });
                 }
-            }, 300); // Adjust the timeout as needed
+            }, 100); // Adjust the timeout as needed
             return;
         }
 
     };
+    
   </script>

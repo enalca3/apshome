@@ -30,7 +30,7 @@ export default function AppDrawer({ className, menuItems }: Props) {
             // esperar a que se cierre el drawer
             setTimeout(() => { 
                 // scroll to section after drawer is closed
-                const element = document.querySelector(`[data-section="${sectionTitle}"]`);
+                const element = document.querySelector(`[id="${sectionTitle}"]`);
                 if (element) {
                     const elementPosition = element.getBoundingClientRect().top;
                     const offsetPosition = elementPosition + window.scrollY - 50;
