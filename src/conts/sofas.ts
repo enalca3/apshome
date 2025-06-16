@@ -25,7 +25,7 @@ export const SOFAS: Product[] = [
             resistencia_piling: "4-5."
         },
         features: {
-            estructura: "Madera de pino de alta calidad",
+            estructura: "Madera de pino de alta calidad.",
             asientos: "Espuma de poliuretano de 32 kg. Recubierta de poliéster. Desenfundables para facilitar su limpieza. Mecanismo deslizante de gran apertura a línea del chaiselongue.",
             respaldo: "Espuma de poliuretano de 25 kg. Súper suave. Reclinable por puntos con mecanismo italiano cromado. Riñoneras en fibra hueca siliconada. 100% desenfundables para facilitar su limpieza.",
             patas: "Madera de color wengué.",
