@@ -77,7 +77,7 @@ function isStock(product: { id: string; }) {
                 {product.specifications && (
                   <div class="border-t mt-10 pt-10 border-gray-200">
                     <h3 class="text-base font-semibold text-black">ESPECIFICACIONES TÉCNICAS</h3>
-                    <div class="text-gray-600 mt-4 text-pretty">
+                    <div class="text-gray-600 mt-4 prose prose-sm">
                       <ul class="list-disc list-inside space-y-2">
                         {product.specifications.composicion && (
                           <li>Composición: {product.specifications.composicion}</li>
