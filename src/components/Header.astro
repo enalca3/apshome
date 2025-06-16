@@ -1,6 +1,5 @@
 ---
 import AppNavigationMenu from "@/components/react/AppNavigationMenu";
-import AppMenuBar from "@/components/react/AppMenuBar";
 import { 
     menuSofaChaiselongue, 
     menuSofa, 
@@ -10,21 +9,12 @@ import {
 import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
 
-const allMenuItems = [
-    menuSofaChaiselongue,
-    menuSofa, 
-    menuSillonRelax,
-    menuStock,
-    menuContacto
-];
-
-const isIphone = typeof window !== "undefined" && /iPhone/i.test(navigator.userAgent);
 ---
 
 <header class="sticky top-0 z-50 bg-white/20 backdrop-blur-md border-b border-white/30">
     <nav class="flex items-center justify-between bg-white/20 backdrop-blur-md p-4 shadow-md relative">
 
-        <Button className="menuButton md:hidden ">
+        <Button id="menuButton" className="md:hidden ">
             <Menu className="mr-2 h-4 w-4" />
         </Button>
         
@@ -34,11 +24,6 @@ const isIphone = typeof window !== "undefined" && /iPhone/i.test(navigator.userA
             </a>
         </div>
         <div class="flex items-center">
-            {isIphone && (
-                <span class="text-lg font-bold text-gray-800 md:hidden block">
-                    Iphone
-                </span>
-            )}
         </div>        
 
         <div class="hidden md:flex items-center gap-4">
